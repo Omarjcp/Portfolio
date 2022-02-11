@@ -1,0 +1,89 @@
+.contain-main-home {
+  height: 100vh;
+  padding-left: 9rem;
+  padding-top: 8rem;
+  .title {
+    color: rgb(197, 197, 197);
+    font-size: 8vh;
+    font-family: "Gochi Hand", cursive;
+
+    .caseUpper {
+      display: inline;
+      color: #4dff9e;
+      font-size: 14vh;
+      animation-name: caseMove;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    @keyframes caseMove {
+      from {
+        left: 0;
+      }
+      50% {
+        color: rgb(210, 70, 253);
+      }
+      to {
+        left: 100%;
+      }
+    }
+  }
+
+  .title-name {
+    color: rgb(197, 197, 197);
+    font-size: 7vh;
+    font-family: "Gochi Hand", cursive;
+    margin-top: 2rem;
+  }
+
+  .subtitle {
+    color: rgb(197, 197, 197);
+    font-size: 4.5vh;
+    font-family: "Gochi Hand", cursive;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .contain-main-home {
+    .title {
+      font-size: 6vh;
+
+      .caseUpper {
+        font-size: 10vh;
+      }
+    }
+
+    .title-name {
+      font-size: 6.5vh;
+    }
+
+    .subtitle {
+      font-size: 5.6vh;
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  .contain-main-home {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-size: 2.5rem;
+
+      .caseUpper {
+        font-size: 4rem;
+      }
+    }
+
+    .title-name {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 2rem;
+    }
+  }
+}
