@@ -73,7 +73,8 @@ export const ChatBotComponent = () => {
             options: [
               { value: 1, label: "Acerca de tí", trigger: "6" },
               { value: 2, label: "Tus skills", trigger: "7" },
-              { value: 3, label: "Contactarnos", trigger: "8" },
+              { value: 3, label: "Tus proyectos", trigger: "8" },
+              { value: 4, label: "Contactarnos", trigger: "9" },
             ],
           },
           {
@@ -88,6 +89,12 @@ export const ChatBotComponent = () => {
           },
           {
             id: "8",
+            message:
+              "No es mucho, pero echale un vistazo a las cositas que he hecho.",
+            trigger: () => onClick("projects"),
+          },
+          {
+            id: "9",
             message:
               "Genial, envíame un mail y te responderé lo mas rapido que pueda.",
             trigger: () => onClick("contactme"),
