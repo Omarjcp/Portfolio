@@ -1,0 +1,95 @@
+.container-aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 5rem 5rem;
+  .title-aboutme {
+    font-size: 3rem;
+    font-family: "Gochi Hand", cursive;
+    color: #c5c5c5;
+
+    .caseUpper {
+      display: inline;
+      color: #4dff9e;
+      font-size: 4.5rem;
+      animation-name: caseMove;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes caseMove {
+      from {
+        top: 0;
+      }
+      50% {
+        color: rgb(210, 70, 253);
+      }
+      to {
+        top: 100%;
+      }
+    }
+  }
+  .second-container-aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .container-text {
+    width: 50%;
+  }
+
+  .container-carrusel {
+    width: 30%;
+  }
+}
+
+@media (max-width: 960px) {
+  .container-aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    .title-aboutme {
+      font-size: 2.5rem;
+      .caseUpper {
+        font-size: 3.9rem;
+      }
+    }
+    .second-container-aboutme {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 80%;
+      .container-text {
+        padding-top: 3.5rem;
+        width: 100%;
+      }
+      .container-carrusel {
+        padding-top: 5rem;
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  .container-aboutme {
+    padding: 0;
+    padding-top: 5rem;
+    .title-aboutme {
+      font-size: 2rem;
+
+      .caseUpper {
+        font-size: 3.2rem;
+      }
+    }
+    .second-container-aboutme {
+      width: 90%;
+    }
+  }
+}

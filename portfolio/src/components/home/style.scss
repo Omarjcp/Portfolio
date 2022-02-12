@@ -10,11 +10,12 @@
     .caseUpper {
       display: inline;
       color: #4dff9e;
-      font-size: 14vh;
+      font-size: 13vh;
       animation-name: caseMove;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
+      letter-spacing: 1px;
     }
     @keyframes caseMove {
       from {
@@ -41,6 +42,27 @@
     font-size: 4.5vh;
     font-family: "Gochi Hand", cursive;
     margin-top: 2rem;
+  }
+
+  .arrow-scroll {
+    position: absolute;
+    color: #4dff9e;
+    font-size: 1.5rem;
+    animation-name: arrowMove;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes arrowMove {
+    from {
+      bottom: 4rem;
+    }
+    100% {
+      color: rgb(210, 70, 253);
+    }
+    to {
+      bottom: 1rem;
+    }
   }
 }
 

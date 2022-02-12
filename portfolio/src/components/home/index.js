@@ -7,16 +7,12 @@ export const Home = () => {
   return (
     <div className="contain-main-home">
       <Heading className="title">
-        <Text className="caseUpper">D</Text>esarrollador web
+        <Text className="caseUpper">o</Text>mar{" "}
+        <Text className="caseUpper">c</Text>astillo
       </Heading>
-      <Heading className="title">
-        <Text className="caseUpper">F</Text>ullstack
-      </Heading>
-      <p className="title-name">Omar Castillo</p>
+      <p className="title-name">Desarrollador web fullstack</p>
       <p className="subtitle">ReactJs - NodeJs</p>
-      <div>
-        <ArrowDownOutlined />
-      </div>
+      <ArrowDownOutlined className="arrow-scroll" />
     </div>
   );
 };

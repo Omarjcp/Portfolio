@@ -3,6 +3,8 @@
 }
 
 .container-app {
-  background-image: url("./components/home/walpapaerdark.webp");
-  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }

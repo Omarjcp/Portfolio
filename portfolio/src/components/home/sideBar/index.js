@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useLocation, useHistory } from "react-router-dom";
 import { Menu } from "antd";
 import {
   MailOutlined,
@@ -10,19 +12,32 @@ import "./style.scss";
 import { BurgerMenu } from "./burgerMenu";
 
 export const SideBar = () => {
+  const location = useLocation();
+  const history = useHistory();
+  let locationCurrent = location.pathname;
+
+  const [current, setCurrent] = useState(locationCurrent);
+
+  const handleClick = (e) => {
+    history.push(`${e.key}`);
+    setCurrent(e.key);
+  };
+
   return (
     <>
       <BurgerMenu />
       <div className="container-side">
         <Menu
           theme="dark"
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={["/"]}
           defaultOpenKeys={["sub1"]}
           mode="inline"
+          selectedKeys={[current]}
           inlineCollapsed={true}
+          onClick={handleClick}
         >
           <Menu.Item
-            key="1"
+            key="/"
             icon={
               <HomeOutlined style={{ color: "#BCB5AE", fontSize: "1.3rem" }} />
             }
@@ -30,7 +45,7 @@ export const SideBar = () => {
             Inicio
           </Menu.Item>
           <Menu.Item
-            key="2"
+            key="/aboutme"
             icon={
               <SmileOutlined
                 style={{
@@ -43,7 +58,7 @@ export const SideBar = () => {
             Acerca de mi
           </Menu.Item>
           <Menu.Item
-            key="3"
+            key="/skills"
             icon={
               <ReadOutlined style={{ color: "#BCB5AE", fontSize: "1.3rem" }} />
             }
@@ -51,7 +66,7 @@ export const SideBar = () => {
             Skills
           </Menu.Item>
           <Menu.Item
-            key="4"
+            key="/projects"
             icon={
               <ExperimentOutlined
                 style={{ color: "#BCB5AE", fontSize: "1.3rem" }}
@@ -61,7 +76,7 @@ export const SideBar = () => {
             Proyectos
           </Menu.Item>
           <Menu.Item
-            key="5"
+            key="/contactme"
             icon={
               <MailOutlined style={{ color: "#BCB5AE", fontSize: "1.3rem" }} />
             }
