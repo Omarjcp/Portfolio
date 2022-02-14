@@ -4,7 +4,19 @@
 
 .container-app {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  background-image: url("https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+}
+
+@media (max-width: 501px) {
+  .container-app {
+    position: fixed;
+    background-image: url("https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif");
+    background-size: cover;
+    width: 100vw;
+    z-index: -1;
+  }
 }

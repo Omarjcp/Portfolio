@@ -1,3 +1,4 @@
+import { ArrowDownOutlined } from "@ant-design/icons";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import { CarouselAboutMe } from "./carousel";
@@ -6,7 +7,14 @@ import "./style.scss";
 
 export const AboutMe = () => {
   return (
-    <>
+    <Box
+      w="100%"
+      h="100vh"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      className="aboutme"
+    >
       <Box className="container-aboutme">
         <Heading className="title-aboutme">
           <Text className="caseUpper">U</Text>n poco sobre de mi...
@@ -57,6 +65,7 @@ export const AboutMe = () => {
           </Box>
         </Box>
       </Box>
-    </>
+      <ArrowDownOutlined className="arrow-scroll-about" />
+    </Box>
   );
 };

@@ -18,10 +18,11 @@ function App() {
         className="container-app"
         src="https://upload-assets.vice.com/files/2015/09/08/1441746347GameL_Tribute_to_Adam_Martinakis_reverse.gif?crop=0.6296875xw:1xh;center,center"
       /> */}
-      <img
-        className="container-app"
+      {/* <img
+      className="container-app"
         src="https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif"
-      />
+        /> */}
+      <div className="container-app"></div>
       <Route exact path="/" render={() => <Home />} />
       <Route path="/" render={() => <SideBar />} />
       <Route path="/" render={() => <ChatBotComponent />} />

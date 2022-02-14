@@ -1,8 +1,3 @@
-.image-carrusel {
-  height: 20rem;
-  width: 100%;
-}
-
 // .ant-carousel .slick-prev,
 // .ant-carousel .slick-prev:hover {
 //   left: 10px;
@@ -27,7 +22,50 @@
 //   border-radius: 50%;
 // }
 
+.image-carrusel {
+  height: 20rem;
+  width: 100%;
+}
+
 .slick-slider.slick-initialized {
   height: 20rem;
   width: 90%;
+}
+
+@media (max-width: 960px) {
+  .image-carrusel {
+    height: 100%;
+    width: 100%;
+  }
+  .slick-list {
+    height: 19rem;
+  }
+  .slick-slider.slick-initialized {
+    height: 19rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 680px) {
+  .image-carrusel {
+    height: 100%;
+    width: 100%;
+  }
+  .slick-list {
+    height: 90%;
+  }
+  .slick-slider.slick-initialized {
+    height: 14rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 557px) {
+  .slick-list {
+    height: 80%;
+  }
+  .slick-slider.slick-initialized {
+    height: 10rem;
+    width: 90%;
+  }
 }

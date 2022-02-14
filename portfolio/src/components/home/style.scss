@@ -2,10 +2,26 @@
   height: 100vh;
   padding-left: 9rem;
   padding-top: 8rem;
+  z-index: 1;
   .title {
     color: rgb(197, 197, 197);
     font-size: 8vh;
     font-family: "Gochi Hand", cursive;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    letter-spacing: 2px;
+    position: relative;
+
+    @keyframes title {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
 
     .caseUpper {
       display: inline;
@@ -35,6 +51,21 @@
     font-size: 7vh;
     font-family: "Gochi Hand", cursive;
     margin-top: 2rem;
+    animation-name: titlename;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    letter-spacing: 2px;
+    position: relative;
+
+    @keyframes titlename {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
   }
 
   .subtitle {
@@ -42,10 +73,27 @@
     font-size: 4.5vh;
     font-family: "Gochi Hand", cursive;
     margin-top: 2rem;
+    animation-name: subtitle;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    letter-spacing: 2px;
+    position: relative;
+
+    @keyframes subtitle {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
   }
 
   .arrow-scroll {
     position: absolute;
+    bottom: 0;
+    left: auto;
     color: #4dff9e;
     font-size: 1.5rem;
     animation-name: arrowMove;
@@ -68,6 +116,7 @@
 
 @media (max-width: 630px) {
   .contain-main-home {
+    height: 100vh;
     .title {
       font-size: 6vh;
 

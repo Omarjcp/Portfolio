@@ -6,10 +6,10 @@ import "./style.scss";
 export const Home = () => {
   return (
     <div className="contain-main-home">
-      <Heading className="title">
-        <Text className="caseUpper">o</Text>mar{" "}
-        <Text className="caseUpper">c</Text>astillo
-      </Heading>
+      <h1 className="title">
+        <p className="caseUpper">o</p>mar <p className="caseUpper">c</p>
+        astillo
+      </h1>
       <p className="title-name">Desarrollador web fullstack</p>
       <p className="subtitle">ReactJs - NodeJs</p>
       <ArrowDownOutlined className="arrow-scroll" />
