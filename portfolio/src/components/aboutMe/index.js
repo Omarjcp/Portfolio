@@ -65,7 +65,6 @@ export const AboutMe = () => {
           </Box>
         </Box>
       </Box>
-      <ArrowDownOutlined className="arrow-scroll-about" />
     </Box>
   );
 };

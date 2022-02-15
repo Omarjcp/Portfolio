@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 70%;
+    height: auto;
+    padding: 2rem 1rem 2rem 1rem;
     background-color: #d1d1d1;
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -64,28 +65,6 @@
       padding-top: 3.5rem;
     }
   }
-  .arrow-scroll-about {
-    position: relative;
-    left: 40%;
-    bottom: 0;
-    color: #4dff9e;
-    font-size: 1.5rem;
-    animation-name: arrowMove;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  @keyframes arrowMove {
-    from {
-      bottom: 4rem;
-    }
-    100% {
-      color: rgb(210, 70, 253);
-    }
-    to {
-      bottom: 1rem;
-    }
-  }
 }
 
 @media (max-width: 1100px) {
@@ -94,11 +73,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 90%;
+      height: auto;
+      padding: 0;
       .title-aboutme {
-        font-size: 2.5rem;
+        font-size: 2rem;
         .caseUpper {
-          font-size: 3.9rem;
+          font-size: 3rem;
         }
       }
       .second-container-aboutme {
@@ -106,9 +86,14 @@
         flex-direction: column;
         width: 80%;
         .container-text {
+          padding-top: 1rem;
           width: 100%;
+          p {
+            font-size: 0.9rem;
+          }
         }
         .container-carrusel {
+          padding-top: 2rem;
           width: 50%;
         }
       }
@@ -120,11 +105,13 @@
   .aboutme {
     .container-aboutme {
       margin-top: 0rem;
-      height: 95%;
+      height: auto;
+      padding: 1.2rem;
+      padding-top: 2rem;
       .title-aboutme {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         .caseUpper {
-          font-size: 3.9rem;
+          font-size: 2.5rem;
         }
       }
       .second-container-aboutme {
@@ -134,9 +121,14 @@
         flex-direction: column;
         width: 80%;
         .container-text {
+          padding-top: 1rem;
+          p {
+            font-size: 0.9rem;
+          }
         }
         .container-carrusel {
           width: 60%;
+          padding-top: 1rem;
         }
       }
     }
@@ -146,16 +138,23 @@
   .aboutme {
     padding-left: 5rem;
     .container-aboutme {
-      height: 100%;
+      height: auto;
+      padding-top: 1rem;
       .title-aboutme {
-        font-size: 2rem;
+        font-size: 1.2rem;
         .caseUpper {
-          font-size: 3.2rem;
+          font-size: 2rem;
         }
       }
       .second-container-aboutme {
         .container-text {
           padding-top: 0.5rem;
+          p {
+            font-size: 0.75rem;
+          }
+        }
+        .container-carrusel {
+          height: 15rem;
         }
       }
     }
@@ -165,9 +164,20 @@
 @media (max-width: 540px) {
   .aboutme {
     .container-aboutme {
-      height: 90%;
+      height: auto;
+      .title-aboutme {
+        font-size: 1rem;
+        .caseUpper {
+          font-size: 1.8rem;
+        }
+      }
       .second-container-aboutme {
         width: 100%;
+        .container-text {
+          p {
+            font-size: 0.7rem;
+          }
+        }
         .container-carrusel {
           display: none;
         }
@@ -183,7 +193,7 @@
       height: auto;
       overflow-y: auto;
       .title-aboutme {
-        display: none;
+        // display: none;
 
         .caseUpper {
           font-size: 3.2rem;
@@ -202,10 +212,20 @@
 @media (max-width: 450px) {
   .aboutme {
     .container-aboutme {
-      height: 100vh;
+      height: auto;
+      .title-aboutme {
+        font-size: 0.8rem;
+        .caseUpper {
+          font-size: 1.5rem;
+        }
+      }
       .second-container-aboutme {
         // padding: 1rem;
-        margin-top: 1rem;
+        .container-text {
+          p {
+            font-size: 0.65rem;
+          }
+        }
       }
     }
   }

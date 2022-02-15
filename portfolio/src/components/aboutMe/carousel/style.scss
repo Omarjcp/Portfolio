@@ -45,6 +45,15 @@
     width: 90%;
   }
 }
+@media (max-width: 750px) {
+  .slick-list {
+    height: 80%;
+  }
+  .slick-slider.slick-initialized {
+    height: 14rem;
+    width: 90%;
+  }
+}
 
 @media (max-width: 680px) {
   .image-carrusel {
