@@ -1,4 +1,4 @@
-import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Box, Image } from "@chakra-ui/react";
 import { Carousel } from "antd";
 
@@ -15,8 +15,8 @@ export const CarouselAboutMe = () => {
     <Box>
       <Carousel
         arrows={true}
-        prevArrow={<LeftCircleOutlined />}
-        nextArrow={<RightCircleOutlined />}
+        prevArrow={<LeftOutlined />}
+        nextArrow={<RightOutlined />}
         autoplay
       >
         {images.map((img) => {

@@ -1,0 +1,96 @@
+.container-main-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-left: 5rem;
+
+  .container-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: #d1d1d1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+
+    animation-name: container-skills;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    letter-spacing: 2px;
+    position: relative;
+
+    @keyframes container-skills {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+
+    .title-skills {
+      font-size: 3rem;
+      font-family: "Gochi Hand", cursive;
+      color: #c5c5c5;
+
+      .case-upper-skills {
+        display: inline;
+        color: #4dff9e;
+        font-size: 4.5rem;
+        animation-name: caseMoveSkills;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes caseMoveSkills {
+        from {
+          top: 0;
+        }
+        50% {
+          // :hover {
+          //   transform: skew(2deg, 2deg);
+          //   transition: all 0.3s ease;
+          // }
+          color: rgb(210, 70, 253);
+        }
+        to {
+          top: 100%;
+        }
+      }
+    }
+
+    .container-text-skills {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .container-main-skills {
+    .container-skills {
+      &:hover {
+        transform: none;
+        transition: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  .container-main-skills {
+    padding: 0;
+  }
+}

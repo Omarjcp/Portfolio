@@ -4,6 +4,7 @@
 .container-side {
   position: fixed;
   top: 0;
+  z-index: 1;
   .ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-dark.ant-menu-inline-collapsed {
     display: flex;
     flex-direction: column;

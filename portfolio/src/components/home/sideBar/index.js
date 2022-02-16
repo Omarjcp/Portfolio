@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import { Menu } from "antd";
 import {
@@ -22,6 +22,10 @@ export const SideBar = () => {
     history.push(`${e.key}`);
     setCurrent(e.key);
   };
+
+  useEffect(() => {
+    setCurrent(locationCurrent);
+  });
 
   return (
     <>
