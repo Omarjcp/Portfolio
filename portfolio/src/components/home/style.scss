@@ -16,10 +16,10 @@
 
     @keyframes title {
       0% {
-        left: 100%;
+        right: 100%;
       }
       100% {
-        left: 0;
+        right: 0;
       }
     }
 
@@ -35,13 +35,13 @@
     }
     @keyframes caseMove {
       from {
-        left: 0;
+        right: 0;
       }
       50% {
         color: rgb(210, 70, 253);
       }
       to {
-        left: 100%;
+        right: 100%;
       }
     }
   }
@@ -60,10 +60,10 @@
 
     @keyframes titlename {
       0% {
-        left: 100%;
+        right: 100%;
       }
       100% {
-        left: 0;
+        right: 0;
       }
     }
   }
@@ -82,10 +82,10 @@
 
     @keyframes subtitle {
       0% {
-        left: 100%;
+        right: 100%;
       }
       100% {
-        left: 0;
+        right: 0;
       }
     }
   }
