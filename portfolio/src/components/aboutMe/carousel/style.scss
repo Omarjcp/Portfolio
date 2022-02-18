@@ -1,27 +1,3 @@
-// .ant-carousel .slick-prev,
-// .ant-carousel .slick-prev:hover {
-//   left: 10px;
-//   z-index: 2;
-//   color: white;
-//   font-size: 30px;
-//   height: auto;
-//   width: auto;
-//   background-color: rgb(146, 146, 146);
-//   border-radius: 50%;
-// }
-
-// .ant-carousel .slick-next,
-// .ant-carousel .slick-next:hover {
-//   right: 10px;
-//   z-index: 2;
-//   color: white;
-//   font-size: 30px;
-//   height: auto;
-//   width: auto;
-//   background-color: rgb(146, 146, 146);
-//   border-radius: 50%;
-// }
-
 .image-carrusel {
   height: 20rem;
   width: 100%;
@@ -78,3 +54,6 @@
     width: 90%;
   }
 }
+
+// @media (max-height: 557px) {
+// }

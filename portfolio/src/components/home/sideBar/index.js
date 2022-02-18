@@ -20,6 +20,7 @@ export const SideBar = () => {
 
   const handleClick = (e) => {
     history.push(`${e.key}`);
+    history.go(0);
     setCurrent(e.key);
   };
 

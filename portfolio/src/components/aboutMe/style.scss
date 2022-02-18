@@ -23,10 +23,10 @@
 
     @keyframes container-about {
       0% {
-        right: 100%;
+        left: 100%;
       }
       100% {
-        right: 0;
+        left: 0;
       }
     }
 
@@ -124,7 +124,7 @@
     .container-aboutme {
       margin-top: 0rem;
       height: auto;
-      padding: 1.2rem;
+      padding: 1rem;
       padding-top: 2rem;
 
       &:hover {
@@ -143,27 +143,30 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         .container-text {
           padding-top: 1rem;
           p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
         }
         .container-carrusel {
-          width: 60%;
+          width: 50%;
+          height: 50%;
           padding-top: 1rem;
         }
       }
     }
   }
 }
+
 @media (max-width: 750px) {
   .aboutme {
     padding-left: 5rem;
     .container-aboutme {
       height: auto;
       padding-top: 1rem;
+      width: 90%;
       .title-aboutme {
         font-size: 1.2rem;
         .caseUpper {
@@ -196,14 +199,11 @@
         }
       }
       .second-container-aboutme {
-        width: 100%;
+        // width: 100%;
         .container-text {
           p {
             font-size: 0.7rem;
           }
-        }
-        .container-carrusel {
-          display: none;
         }
       }
     }
@@ -214,7 +214,7 @@
   .aboutme {
     padding: 0;
     .container-aboutme {
-      height: auto;
+      height: 100vh;
       overflow-y: auto;
       .title-aboutme {
         // display: none;
@@ -251,6 +251,36 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutme {
+    .container-aboutme {
+      height: auto;
+      .title-aboutme {
+        font-size: 0.6rem;
+        .caseUpper {
+          font-size: 1rem;
+        }
+      }
+      .second-container-aboutme {
+        // padding: 1rem;
+        .container-text {
+          p {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 800px) {
+  .aboutme {
+    .container-aboutme {
+      padding: 0rem;
     }
   }
 }

@@ -10,6 +10,7 @@ import { Home } from "./components/home";
 import { SideBar } from "./components/home/sideBar";
 import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
+import { Projects } from "./components/projects";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path="/" render={() => <ChatBotComponent />} />
       <Route exact path="/aboutme" render={() => <AboutMe />} />
       <Route exact path="/skills" render={() => <Skills />} />
+      <Route exact path="/projects" render={() => <Projects />} />
     </ChakraProvider>
   );
 }

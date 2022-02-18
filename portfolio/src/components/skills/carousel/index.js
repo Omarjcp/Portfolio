@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Box, Image } from "@chakra-ui/react";
 import { Carousel } from "antd";
@@ -16,14 +19,10 @@ export const CarouselSkills = () => {
           nextArrow={<RightOutlined />}
           autoplay
         >
-          {imageFront?.map((img) => {
+          {imageFront.map((img) => {
             return (
               <a href={img.link} target="_blank">
-                <Image
-                  className="image-carrusel"
-                  backgroundSize="auto"
-                  src={img.src}
-                />
+                <Image className="image-carrusel" src={img?.src} />
               </a>
             );
           })}
@@ -36,14 +35,10 @@ export const CarouselSkills = () => {
           nextArrow={<RightOutlined />}
           autoplay
         >
-          {imageBackAndDb?.map((img) => {
+          {imageBackAndDb.map((img) => {
             return (
               <a href={img.link} target="_blank">
-                <Image
-                  className="image-carrusel"
-                  backgroundSize="auto"
-                  src={img.src}
-                />
+                <Image className="image-carrusel" src={img?.src} />
               </a>
             );
           })}
@@ -56,14 +51,10 @@ export const CarouselSkills = () => {
           nextArrow={<RightOutlined />}
           autoplay
         >
-          {toolsWork?.map((img) => {
+          {toolsWork.map((img) => {
             return (
               <a href={img.link} target="_blank">
-                <Image
-                  className="image-carrusel"
-                  backgroundSize="auto"
-                  src={img.src}
-                />
+                <Image className="image-carrusel" src={img?.src} />
               </a>
             );
           })}
