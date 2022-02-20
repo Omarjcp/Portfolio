@@ -11,19 +11,11 @@ import { SideBar } from "./components/home/sideBar";
 import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
+import { ContactMe } from "./components/contactme";
 
 function App() {
   return (
     <ChakraProvider>
-      {/* <img className="container-app" src={ImageBackgrond} /> */}
-      {/* <img
-        className="container-app"
-        src="https://upload-assets.vice.com/files/2015/09/08/1441746347GameL_Tribute_to_Adam_Martinakis_reverse.gif?crop=0.6296875xw:1xh;center,center"
-      /> */}
-      {/* <img
-      className="container-app"
-        src="https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif"
-        /> */}
       <div className="container-app"></div>
       <Route exact path="/" render={() => <Home />} />
       <Route path="/" render={() => <SideBar />} />
@@ -31,6 +23,7 @@ function App() {
       <Route exact path="/aboutme" render={() => <AboutMe />} />
       <Route exact path="/skills" render={() => <Skills />} />
       <Route exact path="/projects" render={() => <Projects />} />
+      <Route exact path="/contactme" render={() => <ContactMe />} />
     </ChakraProvider>
   );
 }

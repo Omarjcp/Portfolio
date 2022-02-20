@@ -1,0 +1,48 @@
+.css-a6rva7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  .steps-content {
+    margin-top: 8rem;
+
+    label {
+      letter-spacing: 1.5px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #c5c5c5;
+    }
+    .ant-input {
+      height: 3rem;
+      background-color: #dfdfdf;
+      letter-spacing: 1.5px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      &::placeholder {
+        color: rgb(134, 134, 134);
+      }
+      //   textarea {
+      //     height: 4vh;
+      //     background-color: #dfdfdf;
+      //     letter-spacing: 1.5px;
+      //     font-size: 1.2rem;
+      //     font-weight: 600;
+      //     &::placeholder {
+      //       color: rgb(134, 134, 134);
+      //     }
+      //   }
+    }
+
+    .container-input-email {
+      display: block;
+    }
+
+    .container-input-name {
+      display: block;
+    }
+  }
+}
+
+// .steps-action {
+//   margin-top: 24px;
+// }
