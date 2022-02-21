@@ -4,19 +4,242 @@
 
 .container-app {
   position: fixed;
-  background-image: url("https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif");
-  background-size: cover;
+  // background-image: url("https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif");
+  // background-size: cover;
+  background-color: #141414;
   width: 100%;
   height: 100%;
   z-index: -1;
-}
 
-@media (max-width: 501px) {
-  .container-app {
-    position: fixed;
-    background-image: url("https://c.tenor.com/Zys9j53G_lcAAAAC/gif-wallpaper.gif");
-    background-size: cover;
-    width: 100vw;
-    z-index: -1;
+  .figure-movil {
+    position: absolute;
+    background-color: #4dff9e;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.1;
+    animation: figure 20s ease-in-out 1s infinite alternate-reverse;
+    z-index: 1;
+    @keyframes figure {
+      0% {
+        background-color: red;
+        left: 10%;
+        top: 10%;
+        width: 1rem;
+        height: 1rem;
+      }
+      25% {
+        background-color: yellow;
+        left: 50%;
+        top: 10%;
+        width: 2rem;
+        height: 2rem;
+      }
+      35% {
+        background-color: rgb(210, 70, 253);
+        left: 20%;
+        top: 20%;
+        width: 1rem;
+        height: 1rem;
+      }
+      50% {
+        background-color: blue;
+        left: 50%;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+      }
+      60% {
+        background-color: #4dff9e;
+        left: 30%;
+        top: 30%;
+        width: 1rem;
+        height: 1rem;
+      }
+      75% {
+        background-color: green;
+        left: 10%;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+      }
+      90% {
+        background-color: #4dff9e;
+        left: 60%;
+        top: 80%;
+        width: 1rem;
+        height: 1rem;
+      }
+      100% {
+        background-color: red;
+        left: 10%;
+        top: 10%;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  .figure-movil-two {
+    position: absolute;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.5;
+    animation: figureTwo 20s ease-in-out 1s infinite alternate-reverse;
+    z-index: 1;
+    @keyframes figureTwo {
+      0% {
+        background-color: rgb(139, 42, 42);
+        left: 90%;
+        top: 10%;
+        width: 1rem;
+        height: 1rem;
+      }
+      10% {
+        background-color: rgb(139, 42, 42);
+        left: 80%;
+        top: 20%;
+        width: 2rem;
+        height: 2rem;
+      }
+      15% {
+        background-color: rgb(216, 216, 88);
+        left: 10%;
+        top: 20%;
+        width: 1rem;
+        height: 1rem;
+      }
+      35% {
+        background-color: rgb(67, 29, 78);
+        left: 30%;
+        top: 30%;
+        width: 2rem;
+        height: 2rem;
+      }
+      60% {
+        background-color: rgb(9, 9, 146);
+        left: 80%;
+        top: 60%;
+        width: 1rem;
+        height: 1rem;
+      }
+      65% {
+        background-color: #4dff9e;
+        left: 70%;
+        top: 20%;
+        width: 2rem;
+        height: 2rem;
+      }
+      75% {
+        background-color: green;
+        left: 90%;
+        top: 60%;
+        width: 1rem;
+        height: 1rem;
+      }
+      90% {
+        background-color: #4dff9e;
+        left: 20%;
+        top: 10%;
+        width: 2rem;
+        height: 2rem;
+      }
+      95% {
+        background-color: rgb(95, 26, 92);
+        left: 30%;
+        top: 110%;
+        width: 1rem;
+        height: 1rem;
+      }
+      100% {
+        background-color: rgb(95, 26, 92);
+        left: 20%;
+        top: 35%;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  .figure-movil-three {
+    position: absolute;
+    // left: 1rem;
+    background-color: transparent;
+    border: 2px solid gray;
+    width: 1rem;
+    height: 1rem;
+
+    animation: figureThree 20s ease-in-out 1s infinite alternate-reverse;
+    // animation-name: figureThree;
+    // animation-duration: 10s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate-reverse;
+    z-index: 1;
+    @keyframes figureThree {
+      100% {
+        border: 4px solid red;
+        right: 10%;
+        top: 10%;
+        width: 1rem;
+        height: 1rem;
+      }
+      95% {
+        border: 2px solid yellow;
+        right: 50%;
+        top: 10%;
+        width: 2rem;
+        height: 2rem;
+      }
+      75% {
+        border: 4px solid rgb(210, 70, 253);
+        right: 20%;
+        top: 20%;
+        width: 1rem;
+        height: 1rem;
+      }
+      60% {
+        border: 2px solid blue;
+        right: 50%;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+      }
+      55% {
+        border: 4px solid #4dff9e;
+        right: 30%;
+        top: 30%;
+        width: 1rem;
+        height: 1rem;
+      }
+      45% {
+        border: 2px solid green;
+        right: 10%;
+        top: 50%;
+        width: 2rem;
+        height: 2rem;
+      }
+      20% {
+        border: 4px solid #4dff9e;
+        right: 60%;
+        top: 80%;
+        width: 1rem;
+        height: 1rem;
+      }
+      10% {
+        border: 2px solid rgb(114, 36, 150);
+        right: 10%;
+        top: 10%;
+        width: 2rem;
+        height: 2rem;
+      }
+      0% {
+        border: 4px solid rgba(105, 35, 35, 0.212);
+        right: 30%;
+        top: 30%;
+        width: 1rem;
+        height: 1rem;
+      }
+    }
   }
 }

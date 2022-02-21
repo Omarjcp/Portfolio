@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import { Steps, Button, message, Form, Input } from "antd";
 import { Box } from "@chakra-ui/react";
@@ -14,7 +15,6 @@ const steps = [
     content: (
       <Form.Item
         className="container-input-email"
-        name={["user", "email"]}
         label="Email"
         rules={[{ type: "email", required: true }]}
       >
@@ -27,7 +27,6 @@ const steps = [
     content: (
       <Form.Item
         className="container-input-name"
-        name={["user", "name"]}
         label="Nombre o alias (opcional)"
       >
         <Input placeholder="Nombre" name="name" />{" "}
@@ -37,12 +36,8 @@ const steps = [
   {
     title: "Last",
     content: (
-      <Form.Item
-        className="container-input-name"
-        name={["user", "name"]}
-        label="Mensaje"
-      >
-        <Input.TextArea placeholder="Mensaje" name="msg" />
+      <Form.Item className="container-input-name" label="Mensaje">
+        <Input.TextArea placeholder="Mensaje" name="msg" value="" />
       </Form.Item>
     ),
   },
@@ -64,7 +59,9 @@ export const ContactMe = () => {
     msg: "",
   });
 
-  console.log(msgContact);
+  const history = useHistory();
+
+  const [form] = Form.useForm();
 
   const [current, setCurrent] = useState(0);
 
@@ -77,13 +74,16 @@ export const ContactMe = () => {
   };
 
   const onFinish = (values) => {
-    console.log(values);
+    setMsgContact({ name: "", email: "", msg: "" });
+    form.resetFields();
+    history.push("/");
   };
 
   const onChange = (e) => {
-    console.log(e.target);
     setMsgContact({ ...msgContact, [e.target.name]: e.target.value });
   };
+
+  console.log(msgContact);
 
   return (
     <Box
@@ -103,8 +103,9 @@ export const ContactMe = () => {
           className="steps-content"
           name="nest-messages"
           onChange={onChange}
-          onFinish={onFinish}
+          onFinish={() => onFinish(msgContact)}
           validateMessages={validateMessages}
+          form={form}
         >
           {steps[current].content}
           <div className="steps-action">
@@ -117,7 +118,16 @@ export const ContactMe = () => {
                 Next
               </Button>
             )}
-            {current === steps.length - 1 && (
+            {msgContact.msg.length < 3 ? (
+              <Button
+                type="primary"
+                // onClick={() => message.success("Processing complete!")}
+                disabled
+                htmlType="submit"
+              >
+                Done
+              </Button>
+            ) : (
               <Button
                 type="primary"
                 onClick={() => message.success("Processing complete!")}

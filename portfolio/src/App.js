@@ -16,7 +16,11 @@ import { ContactMe } from "./components/contactme";
 function App() {
   return (
     <ChakraProvider>
-      <div className="container-app"></div>
+      <div className="container-app">
+        <div className="figure-movil"></div>
+        <div className="figure-movil-two"></div>
+        <div className="figure-movil-three"></div>
+      </div>
       <Route exact path="/" render={() => <Home />} />
       <Route path="/" render={() => <SideBar />} />
       <Route path="/" render={() => <ChatBotComponent />} />
