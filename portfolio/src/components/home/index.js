@@ -1,6 +1,7 @@
 import { ArrowDownOutlined } from "@ant-design/icons";
 import { Heading, Text } from "@chakra-ui/react";
 import { AboutMe } from "../aboutMe";
+import { ContactMe } from "../contactme";
 import { Projects } from "../projects";
 import { Skills } from "../skills";
 import { SideBar } from "./sideBar";
@@ -21,6 +22,7 @@ export const Home = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <ContactMe />
     </>
   );
 };

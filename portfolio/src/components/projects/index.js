@@ -106,6 +106,7 @@ export const Projects = () => {
           lineHeight="7"
           fontSize="1rem"
           color="#c5c5c5"
+          padding="3rem"
         >
           Si quieres ver mi repositorio con proyectos de práctica, te dejo mi{" "}
           <Link href="https://github.com/Omarjcp/" isExternal>

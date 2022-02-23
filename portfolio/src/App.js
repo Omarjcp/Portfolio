@@ -20,6 +20,10 @@ function App() {
         <div className="figure-movil"></div>
         <div className="figure-movil-two"></div>
         <div className="figure-movil-three"></div>
+        <div className="figure-movil-four"></div>
+        <div className="figure-movil-five"></div>
+        <div className="figure-movil-six"></div>
+        <div className="line-vertical-divisor"></div>
       </div>
       <Route exact path="/" render={() => <Home />} />
       <Route path="/" render={() => <SideBar />} />

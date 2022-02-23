@@ -1,14 +1,32 @@
 .container-main-projects {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   // align-content: center;
   // justify-content: center;
 
+  animation-name: container-projects;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  letter-spacing: 2px;
+  position: relative;
+
+  @keyframes container-projects {
+    0% {
+      right: 100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+
   .container-title-projects {
     margin-top: 3rem;
+    padding: 3rem;
+
     .title-projects {
       font-size: 3rem;
       font-family: "Gochi Hand", cursive;
@@ -25,18 +43,8 @@
       }
 
       @keyframes caseMoveProjects {
-        from {
-          top: 0;
-        }
         50% {
-          // :hover {
-          //   transform: skew(2deg, 2deg);
-          //   transition: all 0.3s ease;
-          // }
           color: rgb(210, 70, 253);
-        }
-        to {
-          top: 100%;
         }
       }
     }
@@ -64,22 +72,6 @@
   align-items: flex-end;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-
-  animation-name: container-projects;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  letter-spacing: 2px;
-  position: relative;
-
-  @keyframes container-projects {
-    0% {
-      right: 100%;
-    }
-    100% {
-      right: 0;
-    }
-  }
 }
 
 .card:hover {

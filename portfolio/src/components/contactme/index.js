@@ -6,6 +6,7 @@ import { Box } from "@chakra-ui/react";
 import { validateEmail } from "./validation";
 
 import "./style.scss";
+import { ArrowLeftOutlined } from "@ant-design/icons";
 
 const { Step } = Steps;
 
@@ -16,9 +17,10 @@ const steps = [
       <Form.Item
         className="container-input-email"
         label="Email"
+        name="email"
         rules={[{ type: "email", required: true }]}
       >
-        <Input name="email" placeholder="Email" required />{" "}
+        <Input name="email" placeholder="Email" required />
       </Form.Item>
     ),
   },
@@ -28,15 +30,16 @@ const steps = [
       <Form.Item
         className="container-input-name"
         label="Nombre o alias (opcional)"
+        name="name"
       >
-        <Input placeholder="Nombre" name="name" />{" "}
+        <Input placeholder="Nombre" name="name" />
       </Form.Item>
     ),
   },
   {
-    title: "Last",
+    title: "Mensaje",
     content: (
-      <Form.Item className="container-input-name" label="Mensaje">
+      <Form.Item className="container-input-name" name="msg" label="Mensaje">
         <Input.TextArea placeholder="Mensaje" name="msg" value="" />
       </Form.Item>
     ),
@@ -74,6 +77,7 @@ export const ContactMe = () => {
   };
 
   const onFinish = (values) => {
+    console.log(values);
     setMsgContact({ name: "", email: "", msg: "" });
     form.resetFields();
     history.push("/");
@@ -82,8 +86,6 @@ export const ContactMe = () => {
   const onChange = (e) => {
     setMsgContact({ ...msgContact, [e.target.name]: e.target.value });
   };
-
-  console.log(msgContact);
 
   return (
     <Box
@@ -109,36 +111,49 @@ export const ContactMe = () => {
         >
           {steps[current].content}
           <div className="steps-action">
+            {current > 0 && (
+              <Button style={{ marginRight: ".8rem" }} onClick={() => prev()}>
+                <ArrowLeftOutlined />
+              </Button>
+            )}
             {current < steps.length - 1 && validateEmail(msgContact.email) ? (
-              <Button type="primary" onClick={() => next()}>
-                Next
+              <Button
+                style={{
+                  marginRight: ".8rem",
+                  backgroundColor: "rgb(210, 70, 253)",
+                  border: "none",
+                  fontSize: "1rem",
+                  letterSpacing: "1px",
+                  fontWeight: "500",
+                }}
+                size="middle"
+                type="primary"
+                onClick={() => next()}
+              >
+                Siguiente
               </Button>
             ) : (
-              <Button disabled type="primary" onClick={() => next()}>
-                Next
-              </Button>
+              <></>
             )}
             {msgContact.msg.length < 3 ? (
-              <Button
-                type="primary"
-                // onClick={() => message.success("Processing complete!")}
-                disabled
-                htmlType="submit"
-              >
-                Done
-              </Button>
+              <></>
             ) : (
               <Button
                 type="primary"
-                onClick={() => message.success("Processing complete!")}
+                style={{
+                  backgroundColor: "rgb(210, 70, 253)",
+                  border: "none",
+                  fontSize: "1rem",
+                  letterSpacing: "1px",
+                  fontWeight: "500",
+                }}
+                size="middle"
+                onClick={() =>
+                  message.success("Tu mensaje fue enviado correctamente!")
+                }
                 htmlType="submit"
               >
-                Done
-              </Button>
-            )}
-            {current > 0 && (
-              <Button style={{ margin: "0 8px" }} onClick={() => prev()}>
-                Previous
+                Enviar
               </Button>
             )}
           </div>
