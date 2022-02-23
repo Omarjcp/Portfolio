@@ -5,7 +5,7 @@ import "./style.scss";
 
 export const Skills = () => {
   return (
-    <Box className="container-main-skills">
+    <Box id="skills" className="container-main-skills">
       <Box className="container-skills">
         <Heading className="title-skills">
           <Text className="case-upper-skills">M</Text>is habilidades...

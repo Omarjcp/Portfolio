@@ -7,21 +7,21 @@
     color: rgb(197, 197, 197);
     font-size: 8vh;
     font-family: "Gochi Hand", cursive;
-    animation-name: title;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    letter-spacing: 2px;
-    position: relative;
+    // animation-name: title;
+    // animation-duration: 2s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: 1;
+    // letter-spacing: 2px;
+    // position: relative;
 
-    @keyframes title {
-      0% {
-        right: 100%;
-      }
-      100% {
-        right: 0;
-      }
-    }
+    // @keyframes title {
+    //   0% {
+    //     right: 100%;
+    //   }
+    //   100% {
+    //     right: 0;
+    //   }
+    // }
 
     .caseUpper {
       display: inline;
@@ -34,14 +34,8 @@
       letter-spacing: 1px;
     }
     @keyframes caseMove {
-      from {
-        right: 0;
-      }
       50% {
         color: rgb(210, 70, 253);
-      }
-      to {
-        right: 100%;
       }
     }
   }
@@ -51,21 +45,21 @@
     font-size: 7vh;
     font-family: "Gochi Hand", cursive;
     margin-top: 2rem;
-    animation-name: titlename;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    letter-spacing: 2px;
-    position: relative;
+    // animation-name: titlename;
+    // animation-duration: 3s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: 1;
+    // letter-spacing: 2px;
+    // position: relative;
 
-    @keyframes titlename {
-      0% {
-        right: 100%;
-      }
-      100% {
-        right: 0;
-      }
-    }
+    // @keyframes titlename {
+    //   0% {
+    //     right: 100%;
+    //   }
+    //   100% {
+    //     right: 0;
+    //   }
+    // }
   }
 
   .subtitle {
@@ -73,21 +67,21 @@
     font-size: 4.5vh;
     font-family: "Gochi Hand", cursive;
     margin-top: 2rem;
-    animation-name: subtitle;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    letter-spacing: 2px;
-    position: relative;
+    // animation-name: subtitle;
+    // animation-duration: 4s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: 1;
+    // letter-spacing: 2px;
+    // position: relative;
 
-    @keyframes subtitle {
-      0% {
-        right: 100%;
-      }
-      100% {
-        right: 0;
-      }
-    }
+    // @keyframes subtitle {
+    //   0% {
+    //     right: 100%;
+    //   }
+    //   100% {
+    //     right: 0;
+    //   }
+    // }
   }
 
   .arrow-scroll {
@@ -100,6 +94,7 @@
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
   }
   @keyframes arrowMove {
     from {

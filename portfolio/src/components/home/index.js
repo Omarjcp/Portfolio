@@ -10,7 +10,7 @@ import "./style.scss";
 export const Home = () => {
   return (
     <>
-      <div className="contain-main-home">
+      <div id="home" className="contain-main-home">
         <h1 className="title">
           <p className="caseUpper">o</p>mar <p className="caseUpper">c</p>
           astillo

@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 import { Steps, Button, message, Form, Input } from "antd";
 import { Box } from "@chakra-ui/react";
@@ -39,8 +40,12 @@ const steps = [
   {
     title: "Mensaje",
     content: (
-      <Form.Item className="container-input-name" name="msg" label="Mensaje">
-        <Input.TextArea placeholder="Mensaje" name="msg" value="" />
+      <Form.Item
+        className="container-input-name"
+        name="message"
+        label="Mensaje"
+      >
+        <Input.TextArea placeholder="Mensaje" name="message" value="" />
       </Form.Item>
     ),
   },
@@ -59,7 +64,8 @@ export const ContactMe = () => {
   const [msgContact, setMsgContact] = useState({
     name: "",
     email: "",
-    msg: "",
+    message: "",
+    subject: "Msj de contacto Portafolio",
   });
 
   const history = useHistory();
@@ -76,11 +82,21 @@ export const ContactMe = () => {
     setCurrent(current - 1);
   };
 
-  const onFinish = (values) => {
-    console.log(values);
-    setMsgContact({ name: "", email: "", msg: "" });
+  const onFinish = async (values) => {
+    try {
+      const msgEmail = await emailjs.send(
+        "default_service",
+        "contact_form",
+        msgContact,
+        "user_yNmimQYukJvALDqga5CxK"
+      );
+    } catch (error) {
+      console.log("error", error);
+    }
+
+    setMsgContact({ name: "", email: "", message: "" });
     form.resetFields();
-    history.push("/");
+    history.go(0);
   };
 
   const onChange = (e) => {
@@ -94,6 +110,7 @@ export const ContactMe = () => {
       justifyContent="center"
       alignItems="center"
       flexDirection="column"
+      id="contactme"
     >
       <Box w="60%">
         <Steps current={current}>
@@ -135,7 +152,7 @@ export const ContactMe = () => {
             ) : (
               <></>
             )}
-            {msgContact.msg.length < 3 ? (
+            {msgContact.message.length < 3 ? (
               <></>
             ) : (
               <Button

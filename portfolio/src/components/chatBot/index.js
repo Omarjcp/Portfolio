@@ -4,19 +4,21 @@ import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import ImageBot from "./bot.png";
 
+import "./style.scss";
+
 export const ChatBotComponent = () => {
   const history = useHistory();
 
   const theme = {
-    background: "#D2D2D2",
+    background: "rgb(236, 236, 236)",
     fontFamily: "Helvetica Neue",
-    headerBgColor: "#4DFF9E",
-    headerFontColor: "#6E6E6E",
+    headerBgColor: "#14E473",
+    headerFontColor: "#3333333",
     headerFontSize: "20px",
-    botBubbleColor: "#4DFF9E",
-    botFontColor: "#6E6E6E",
-    userBubbleColor: "#6E6E6E",
-    userFontColor: "#4DFF9E",
+    botBubbleColor: "#14E473",
+    botFontColor: "#3333333",
+    userBubbleColor: "#3333333",
+    userFontColor: "#3333333",
   };
 
   const onClick = (screen) => {
@@ -42,7 +44,7 @@ export const ChatBotComponent = () => {
           {
             id: "3",
             message:
-              "Un gusto conocerte {previousValue}! ¿Que te trae por acá, quieres conocer un poco sobre mi?",
+              "Un gusto conocerte {previousValue}! ¿Quieres conocer un poco sobre mi?",
             trigger: "4.1",
           },
           {
@@ -85,7 +87,7 @@ export const ChatBotComponent = () => {
           {
             id: "7",
             message: "Bien, sabrás un poco de mis conocimientos y habilidades.",
-            trigger: () => onClick("myskills"),
+            trigger: () => onClick("skills"),
           },
           {
             id: "8",

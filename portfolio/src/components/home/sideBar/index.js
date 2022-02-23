@@ -14,19 +14,18 @@ import { BurgerMenu } from "./burgerMenu";
 export const SideBar = () => {
   const location = useLocation();
   const history = useHistory();
-  let locationCurrent = location.pathname;
+  let locationCurrent = "/" + location.hash;
 
   const [current, setCurrent] = useState(locationCurrent);
 
   const handleClick = (e) => {
-    // history.push(`${e.key}`);
-    // history.push(`${e.key}`);
     setCurrent(e.key);
   };
 
   useEffect(() => {
     setCurrent(locationCurrent);
-  });
+    console.log(locationCurrent);
+  }, [locationCurrent]);
 
   return (
     <>
@@ -41,98 +40,81 @@ export const SideBar = () => {
           inlineCollapsed={true}
           onClick={handleClick}
         >
-          <Link to="/">
-            <Menu.Item
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              key="/"
-              icon={
+          <Menu.Item
+            key="/#home"
+            icon={
+              <a href="#home">
                 <HomeOutlined
                   style={{
                     color: "#BCB5AE",
                     fontSize: "1.3rem",
-                    marginLeft: "5px",
                   }}
                 />
-              }
-            >
-              {/* Inicio */}
-            </Menu.Item>
-          </Link>
-          <Link
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            to="/aboutme"
+              </a>
+            }
           >
-            <Menu.Item
-              key="/aboutme"
-              icon={
+            Inicio
+          </Menu.Item>
+          <Menu.Item
+            key="/#aboutme"
+            icon={
+              <a href="#aboutme">
                 <SmileOutlined
                   style={{
                     color: "#BCB5AE",
                     fontSize: "1.3rem",
-                    marginLeft: "5px",
                   }}
                 />
-              }
-            >
-              {/* Acerca de mi */}
-            </Menu.Item>
-          </Link>
-          <Link to="/skills">
-            <Menu.Item
-              key="/skills"
-              icon={
+              </a>
+            }
+          >
+            Acerca de mi
+          </Menu.Item>
+          <Menu.Item
+            key="/#skills"
+            icon={
+              <a href="#skills">
                 <ReadOutlined
                   style={{
                     color: "#BCB5AE",
                     fontSize: "1.3rem",
-                    marginLeft: "5px",
                   }}
                 />
-              }
-            >
-              {/* Skills */}
-            </Menu.Item>
-          </Link>
-          <Link to="/projects">
-            <Menu.Item
-              key="/projects"
-              icon={
+              </a>
+            }
+          >
+            Skills
+          </Menu.Item>
+          <Menu.Item
+            key="/#projects"
+            icon={
+              <a href="#projects">
                 <ExperimentOutlined
                   style={{
                     color: "#BCB5AE",
                     fontSize: "1.3rem",
-                    marginLeft: "5px",
                   }}
                 />
-              }
-            >
-              {/* Proyectos */}
-            </Menu.Item>
-          </Link>
-          <Link to="/contactme">
-            <Menu.Item
-              key="/contactme"
-              icon={
+              </a>
+            }
+          >
+            Proyectos
+          </Menu.Item>
+          <Menu.Item
+            key="/#contactme"
+            icon={
+              <a href="#contactme">
                 <MailOutlined
                   style={{
                     color: "#BCB5AE",
                     fontSize: "1.3rem",
-                    marginLeft: "5px",
                   }}
                 />
-              }
-            >
-              {/* Contacta me */}
-            </Menu.Item>
-          </Link>
+              </a>
+            }
+          >
+            Contacta me
+          </Menu.Item>
         </Menu>
       </div>
     </>

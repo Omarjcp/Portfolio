@@ -12,14 +12,14 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import ImageDogPage from "./assets/imageDogPag.png";
-import ImageMetaPage from "./assets/imageMetaPage.png";
+import ImageDogPage from "./assets/iconsmall.png";
+import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
 
 import "./style.scss";
 
 export const Projects = () => {
   return (
-    <Box className="container-main-projects">
+    <Box id="projects" className="container-main-projects">
       <Box className="container-title-projects">
         <Heading className="title-projects">
           <Text className="case-upper-projects">P</Text>royectos realizados
@@ -35,7 +35,7 @@ export const Projects = () => {
         </Text>
       </Box>
       <Box className="container-cards-projects">
-        <Box className="card">
+        <Box className="card-dog">
           <Image alt="image landing page my dog app" src={ImageDogPage} />
           <div class="info">
             <Heading>My dog app</Heading>
@@ -79,7 +79,7 @@ export const Projects = () => {
             </Box>
           </div>
         </Box>
-        <Box className="card">
+        <Box className="card-dog">
           <Image alt="image landing page my dog app" src={ImageDogPage} />
           <div class="info">
             <Heading>Portafolio</Heading>

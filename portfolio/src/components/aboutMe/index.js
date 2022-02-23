@@ -14,6 +14,7 @@ export const AboutMe = () => {
       justifyContent="center"
       alignItems="center"
       className="aboutme"
+      id="aboutme"
     >
       <Box className="container-aboutme">
         <Heading className="title-aboutme">
