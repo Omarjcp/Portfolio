@@ -14,6 +14,7 @@ import {
 
 import ImageDogPage from "./assets/iconsmall.png";
 import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
+import LogoOj from "../../images/meCaricatureTwo.png";
 
 import "./style.scss";
 
@@ -40,10 +41,90 @@ export const Projects = () => {
           <div class="info">
             <Heading>My dog app</Heading>
             <Text>
-              Lorem Ipsum is simply dummy text from the printing and
-              typesetinggsdddddddddddgsd gdsfgkohdsfgsd dsghsdfghd jkfgdfhg sdfg
-              jksdfng jsdf jgkhsdfkjghjkdfhgjk dfg hfdghjkdfs gsdf industry
+              Página web de búsqueda y creación de razas de perros, consumiendo
+              API externa y creando una base de datos propia para la
+              persistencia de datos{<br />}
             </Text>
+            <Box className="container-buttons-icons">
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(29, 29, 29, 0.6)",
+                  width: "3.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                React
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(29, 29, 29, 0.6)",
+                  width: "4.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Redux
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(29, 29, 29, 0.6)",
+                  width: "10rem",
+                  height: "2.3rem",
+                  borderRadius: "45%",
+                }}
+              >
+                Styled Component
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(29, 29, 29, 0.6)",
+                  width: "3.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Node
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(29, 29, 29, 0.6)",
+                  width: "5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Express
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(29, 29, 29, 0.6)",
+                  width: "6rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Postgresql
+              </Text>
+            </Box>
             <Box className="container-buttons-icons">
               <Link
                 href="https://github.com/Omarjcp/PI-Dogs-FT_14b"
@@ -62,10 +143,51 @@ export const Projects = () => {
           <div class="info">
             <Heading>Contador Metacademy</Heading>
             <Text>
-              Lorem Ipsum is simply dummy text from the printing and
-              typesetinggsdddddddddddgsd gdsfgkohdsfgsd dsghsdfghd jkfgdfhg sdfg
-              jksdfng jsdf jgkhsdfkjghjkdfhgjk dfg hfdghjkdfs gsdf industry
+              Aplicación realizada para academia de Axie Infinity el cual tiene
+              como finalidad contar energias, cartas, y dinero en el juego.
+              {<br />}
             </Text>
+            <Box className="container-buttons-icons">
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "3.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                React
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "6.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Chackra Ui
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "3.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Sass
+              </Text>
+            </Box>
             <Box className="container-buttons-icons">
               <Link
                 href="https://github.com/mamv2137/meta-energy-counter"
@@ -79,15 +201,70 @@ export const Projects = () => {
             </Box>
           </div>
         </Box>
-        <Box className="card-dog">
-          <Image alt="image landing page my dog app" src={ImageDogPage} />
+        <Box className="card">
+          <Image alt="Caricature of me" src={LogoOj} />
           <div class="info">
             <Heading>Portafolio</Heading>
             <Text>
-              Lorem Ipsum is simply dummy text from the printing and
-              typesetinggsdddddddddddgsd gdsfgkohdsfgsd dsghsdfghd jkfgdfhg sdfg
-              jksdfng jsdf jgkhsdfkjghjkdfhgjk dfg hfdghjkdfs gsdf industry
+              Página web personal en la que muestro un poco sobre mi, las
+              habilidades que poseo y algunos de los proyectos que he realizado
+              hasta el momento
             </Text>
+            <Box className="container-buttons-icons">
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "3.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                React
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "6.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Chackra Ui
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "6.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Ant Design
+              </Text>
+              <Text
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  width: "3.5rem",
+                  height: "2.3rem",
+                  borderRadius: "40%",
+                }}
+              >
+                Sass
+              </Text>
+            </Box>
+
             <Box className="container-buttons-icons">
               <Link href="https://github.com/Omarjcp/Portfolio" target="_blank">
                 <IconButton icon={<GithubOutlined />} />

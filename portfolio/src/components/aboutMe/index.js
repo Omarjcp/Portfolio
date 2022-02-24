@@ -18,7 +18,7 @@ export const AboutMe = () => {
     >
       <Box className="container-aboutme">
         <Heading className="title-aboutme">
-          <Text className="caseUpper">U</Text>n poco sobre de mi...
+          <Text className="caseUpper">U</Text>n poco sobre de mí...
         </Heading>
         <Box className="second-container-aboutme">
           <Box className="container-text">
@@ -38,7 +38,8 @@ export const AboutMe = () => {
               fontSize="1rem"
               color="#c5c5c5"
             >
-              Desarrollador web fullstack con ReactJs y NodeJs, graduado en{" "}
+              Me desempeño como desarrollador web fullstack con ReactJs y
+              NodeJs, graduado en{" "}
               <Link href="https://www.soyhenry.com/" isExternal>
                 SoyHenry <ExternalLinkIcon />
               </Link>{" "}

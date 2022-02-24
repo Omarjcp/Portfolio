@@ -13,6 +13,8 @@ import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
 import { ContactMe } from "./components/contactme";
 
+import imageMe from "./images/meCaricature.png";
+
 function App() {
   return (
     <ChakraProvider>
@@ -23,7 +25,6 @@ function App() {
         <div className="figure-movil-four"></div>
         <div className="figure-movil-five"></div>
         <div className="figure-movil-six"></div>
-        <div className="line-vertical-divisor"></div>
       </div>
       <Route exact path="/" render={() => <Home />} />
       <Route path="/" render={() => <SideBar />} />
