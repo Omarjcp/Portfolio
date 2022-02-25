@@ -15,7 +15,7 @@ import {
   SmileOutlined,
 } from "@ant-design/icons";
 
-export const BurgerMenu = () => {
+export const BurgerMenu = ({ getPathToRedirect }) => {
   return (
     <div className="burgerMenu">
       <Menu>
@@ -29,13 +29,21 @@ export const BurgerMenu = () => {
           <HamburgerIcon />
         </MenuButton>
         <MenuList backgroundColor="#272727" borderColor="#272727">
-          <MenuItem icon={<HomeOutlined />}>Inicio</MenuItem>
+          <a href={getPathToRedirect("#home")}>
+            <MenuItem icon={<HomeOutlined />}>Inicio</MenuItem>
+          </a>
           <MenuDivider color="white" />
-          <MenuItem icon={<SmileOutlined />}>Acerca de mi</MenuItem>
+          <a href={getPathToRedirect("#aboutme")}>
+            <MenuItem icon={<SmileOutlined />}>Acerca de mi</MenuItem>
+          </a>
           <MenuDivider />
-          <MenuItem icon={<ReadOutlined />}>Proyectos</MenuItem>
+          <a href={getPathToRedirect("#projects")}>
+            <MenuItem icon={<ReadOutlined />}>Proyectos</MenuItem>
+          </a>
           <MenuDivider />
-          <MenuItem icon={<ExperimentOutlined />}>Contacta me</MenuItem>
+          <a href={getPathToRedirect("#contactme")}>
+            <MenuItem icon={<ExperimentOutlined />}>Contacta me</MenuItem>
+          </a>
         </MenuList>
       </Menu>
     </div>

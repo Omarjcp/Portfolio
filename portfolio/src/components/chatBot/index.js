@@ -2,7 +2,7 @@ import { useHistory } from "react-router-dom";
 
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
-import ImageBot from "./bot.png";
+import ImageBot from "../../images/meCaricature.png";
 
 import "./style.scss";
 
@@ -32,19 +32,8 @@ export const ChatBotComponent = () => {
         botAvatar={ImageBot}
         steps={[
           {
-            id: "1",
-            message: "¿Hola, como estas? ¿Puedo saber cual es tu nombre?",
-            trigger: "2",
-          },
-          {
-            id: "2",
-            user: true,
-            trigger: "3",
-          },
-          {
             id: "3",
-            message:
-              "Un gusto conocerte {previousValue}! ¿Quieres conocer un poco sobre mi?",
+            message: "¡Hola! ¿Quieres conocer un poco sobre mí?",
             trigger: "4.1",
           },
           {
@@ -57,48 +46,43 @@ export const ChatBotComponent = () => {
           {
             id: "4.2",
             message:
-              "Genial, Gracias por pasarte a ver mi portafolio. ¡Un gusto conocerte! :D",
+              "Genial, gracias por pasarte a ver mi portafolio. ¡Un gusto conocerte! :D",
             end: true,
           },
           {
             id: "4",
-            message: "A ver, ¿Que quieres saber?",
+            message: "A ver, ¿Qué te gustaría saber?",
             trigger: "5",
           },
           {
             id: "4.5",
-            message: "Quieres conocer algo mas de mi?",
+            message: "¿Te gustaría conocer algo mas?",
             trigger: "4.1",
           },
           {
             id: "5",
             options: [
-              { value: 1, label: "Acerca de tí", trigger: "6" },
-              { value: 2, label: "Tus skills", trigger: "7" },
-              { value: 3, label: "Tus proyectos", trigger: "8" },
-              { value: 4, label: "Contactarnos", trigger: "9" },
+              {
+                value: 1,
+                label: "Acerca de tí",
+                trigger: () => onClick("aboutme"),
+              },
+              {
+                value: 2,
+                label: "Tus skills",
+                trigger: () => onClick("skills"),
+              },
+              {
+                value: 3,
+                label: "Tus proyectos",
+                trigger: () => onClick("projects"),
+              },
+              { value: 4, label: "Contactarte", trigger: "9" },
             ],
           },
           {
-            id: "6",
-            message: "Ok, ahora puedes conocer un poco de mi.",
-            trigger: () => onClick("aboutme"),
-          },
-          {
-            id: "7",
-            message: "Bien, sabrás un poco de mis conocimientos y habilidades.",
-            trigger: () => onClick("skills"),
-          },
-          {
-            id: "8",
-            message:
-              "No es mucho, pero echale un vistazo a las cositas que he hecho.",
-            trigger: () => onClick("projects"),
-          },
-          {
             id: "9",
-            message:
-              "Genial, envíame un mail y te responderé lo mas rapido que pueda.",
+            message: "Genial, envíame un correo y te responderé a la brevedad.",
             trigger: () => onClick("contactme"),
           },
         ]}

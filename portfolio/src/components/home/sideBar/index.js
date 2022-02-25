@@ -27,9 +27,12 @@ export const SideBar = () => {
     console.log(locationCurrent);
   }, [locationCurrent]);
 
+  const getPathToRedirect = (screen) =>
+    location.pathname !== "/" ? `/${screen}` : screen;
+
   return (
     <>
-      <BurgerMenu />
+      <BurgerMenu getPathToRedirect={getPathToRedirect} />
       <div className="container-side">
         <Menu
           theme="dark"
@@ -43,7 +46,7 @@ export const SideBar = () => {
           <Menu.Item
             key="/#home"
             icon={
-              <a href="#home">
+              <a href={getPathToRedirect("#home")}>
                 <HomeOutlined
                   style={{
                     color: "#BCB5AE",
@@ -58,7 +61,7 @@ export const SideBar = () => {
           <Menu.Item
             key="/#aboutme"
             icon={
-              <a href="#aboutme">
+              <a href={getPathToRedirect("#aboutme")}>
                 <SmileOutlined
                   style={{
                     color: "#BCB5AE",
@@ -73,7 +76,7 @@ export const SideBar = () => {
           <Menu.Item
             key="/#skills"
             icon={
-              <a href="#skills">
+              <a href={getPathToRedirect("#skills")}>
                 <ReadOutlined
                   style={{
                     color: "#BCB5AE",
@@ -88,7 +91,7 @@ export const SideBar = () => {
           <Menu.Item
             key="/#projects"
             icon={
-              <a href="#projects">
+              <a href={getPathToRedirect("#projects")}>
                 <ExperimentOutlined
                   style={{
                     color: "#BCB5AE",
@@ -103,7 +106,7 @@ export const SideBar = () => {
           <Menu.Item
             key="/#contactme"
             icon={
-              <a href="#contactme">
+              <a href={getPathToRedirect("#contactme")}>
                 <MailOutlined
                   style={{
                     color: "#BCB5AE",

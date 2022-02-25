@@ -29,10 +29,10 @@ function App() {
       <Route exact path="/" render={() => <Home />} />
       <Route path="/" render={() => <SideBar />} />
       <Route path="/" render={() => <ChatBotComponent />} />
-      {/* <Route exact path="/aboutme" render={() => <AboutMe />} />
+      <Route exact path="/aboutme" render={() => <AboutMe />} />
       <Route exact path="/skills" render={() => <Skills />} />
       <Route exact path="/projects" render={() => <Projects />} />
-      <Route exact path="/contactme" render={() => <ContactMe />} /> */}
+      <Route exact path="/contactme" render={() => <ContactMe />} />
     </ChakraProvider>
   );
 }

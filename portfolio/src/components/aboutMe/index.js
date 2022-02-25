@@ -45,8 +45,7 @@ export const AboutMe = () => {
               </Link>{" "}
               una experiencia maravillosa en la cual no solo adquirí
               conocimientos técnicos muy importantes, sino tambien que me ayudó
-              a fortalecer y ampliar mi capacidad analítica, la cual es de suma
-              importancia a la hora de resolver problemas.
+              a fortalecer y ampliar mi capacidad analítica.
             </Text>
             <Text
               fontWeight="medium"
@@ -56,10 +55,8 @@ export const AboutMe = () => {
               color="#c5c5c5"
             >
               Soy un apasionado por el desarrollo y la evolución personal, me
-              encantan los deportes, pienso que es muy importante no solo
-              mantener una mente activa y totalmente sana, es de suma
-              importancia ser una persona integra, y mantener un balance sano
-              entre cuerpo y mente.
+              encantan los deportes, pienso que es muy importante mantener una
+              mente activa y un cuerpo sano.
             </Text>
           </Box>
           <Box className="container-carrusel">

@@ -42,7 +42,7 @@
   }
   .burgerMenu {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 1.5rem;
     right: 1.5rem;
     background-color: transparent;

@@ -46,84 +46,14 @@ export const Projects = () => {
               persistencia de datos{<br />}
             </Text>
             <Box className="container-buttons-icons">
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(29, 29, 29, 0.6)",
-                  width: "3.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                React
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(29, 29, 29, 0.6)",
-                  width: "4.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Redux
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(29, 29, 29, 0.6)",
-                  width: "10rem",
-                  height: "2.3rem",
-                  borderRadius: "45%",
-                }}
-              >
+              <Text className="tecnologi-project-light-w35">React</Text>
+              <Text className="tecnologi-project-light-w45">Redux</Text>
+              <Text className="tecnologi-project-light-w10">
                 Styled Component
               </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(29, 29, 29, 0.6)",
-                  width: "3.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Node
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(29, 29, 29, 0.6)",
-                  width: "5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Express
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(29, 29, 29, 0.6)",
-                  width: "6rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Postgresql
-              </Text>
+              <Text className="tecnologi-project-light-w35">Node</Text>
+              <Text className="tecnologi-project-light-w5">Express</Text>
+              <Text className="tecnologi-project-light-w6">Postgresql</Text>
             </Box>
             <Box className="container-buttons-icons">
               <Link
@@ -148,45 +78,9 @@ export const Projects = () => {
               {<br />}
             </Text>
             <Box className="container-buttons-icons">
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "3.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                React
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "6.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Chackra Ui
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "3.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Sass
-              </Text>
+              <Text className="tecnologi-project-dark-w35">React</Text>
+              <Text className="tecnologi-project-dark-w65">Chackra Ui</Text>
+              <Text className="tecnologi-project-dark-w35">Sass</Text>
             </Box>
             <Box className="container-buttons-icons">
               <Link
@@ -211,65 +105,17 @@ export const Projects = () => {
               hasta el momento
             </Text>
             <Box className="container-buttons-icons">
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "3.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                React
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "6.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Chackra Ui
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "6.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Ant Design
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  backgroundColor: "rgba(0, 0, 0, 0.6)",
-                  width: "3.5rem",
-                  height: "2.3rem",
-                  borderRadius: "40%",
-                }}
-              >
-                Sass
-              </Text>
+              <Text className="tecnologi-project-dark-w35">React</Text>
+              <Text className="tecnologi-project-dark-w65">Chackra Ui</Text>
+              <Text className="tecnologi-project-dark-w65">Ant Design</Text>
+              <Text className="tecnologi-project-dark-w35">Sass</Text>
             </Box>
 
             <Box className="container-buttons-icons">
               <Link href="https://github.com/Omarjcp/Portfolio" target="_blank">
                 <IconButton icon={<GithubOutlined />} />
               </Link>
-              <Link href="https://metacademyapp.web.app/" target="_blank">
+              <Link href="#home">
                 <IconButton icon={<LinkIcon />} />
               </Link>
             </Box>

@@ -3,7 +3,7 @@ import { Box, Image } from "@chakra-ui/react";
 import { Carousel } from "antd";
 
 import ImageOne from "./image1.png";
-import ImageTwo from "./image2.jpeg";
+import ImageTwo from "./image2.png";
 import ImageTree from "./image3.jpg";
 
 import "./style.scss";

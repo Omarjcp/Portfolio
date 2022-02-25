@@ -13,15 +13,15 @@ const { Step } = Steps;
 
 const steps = [
   {
-    title: "Email",
+    title: "Correo",
     content: (
       <Form.Item
         className="container-input-email"
-        label="Email"
+        label="Correo"
         name="email"
         rules={[{ type: "email", required: true }]}
       >
-        <Input name="email" placeholder="Email" required />
+        <Input name="email" placeholder="Correo" required />
       </Form.Item>
     ),
   },
@@ -55,7 +55,7 @@ const steps = [
 const validateMessages = {
   required: "${label} es requerido!",
   types: {
-    email: "${label} no es un email! valido",
+    email: "No es un correo! válido",
   },
 };
 /* eslint-enable no-template-curly-in-string */
@@ -139,8 +139,7 @@ export const ContactMe = () => {
                   marginRight: ".8rem",
                   backgroundColor: "rgb(210, 70, 253)",
                   border: "none",
-                  fontSize: "1rem",
-                  letterSpacing: "1px",
+                  letterSpacing: "2px",
                   fontWeight: "500",
                 }}
                 size="middle"
@@ -160,8 +159,7 @@ export const ContactMe = () => {
                 style={{
                   backgroundColor: "rgb(210, 70, 253)",
                   border: "none",
-                  fontSize: "1rem",
-                  letterSpacing: "1px",
+                  letterSpacing: "2px",
                   fontWeight: "500",
                 }}
                 size="middle"

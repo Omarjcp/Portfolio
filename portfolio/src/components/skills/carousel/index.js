@@ -14,9 +14,9 @@ export const CarouselSkills = () => {
     <Box className="container-carousels">
       <Box className="container-front">
         <Carousel
-          arrows={true}
-          prevArrow={<LeftOutlined />}
-          nextArrow={<RightOutlined />}
+          // arrows={true}
+          // prevArrow={<LeftOutlined />}
+          // nextArrow={<RightOutlined />}
           autoplay
         >
           {imageFront.map((img) => {
@@ -30,9 +30,9 @@ export const CarouselSkills = () => {
       </Box>
       <Box className="container-front">
         <Carousel
-          arrows={true}
-          prevArrow={<LeftOutlined />}
-          nextArrow={<RightOutlined />}
+          // arrows={true}
+          // prevArrow={<LeftOutlined />}
+          // nextArrow={<RightOutlined />}
           autoplay
         >
           {imageBackAndDb.map((img) => {
@@ -46,9 +46,9 @@ export const CarouselSkills = () => {
       </Box>
       <Box className="container-front">
         <Carousel
-          arrows={true}
-          prevArrow={<LeftOutlined />}
-          nextArrow={<RightOutlined />}
+          // arrows={true}
+          // prevArrow={<LeftOutlined />}
+          // nextArrow={<RightOutlined />}
           autoplay
         >
           {toolsWork.map((img) => {

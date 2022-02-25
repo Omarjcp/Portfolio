@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 501px) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .container-main-projects {
   width: 100%;
   height: auto;
@@ -231,4 +241,74 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
+
+  .tecnologi-project-light-w35 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 29, 29, 0.6);
+    width: 3.5rem;
+    height: 2.3rem;
+    border-radius: 40%;
+  }
+
+  .tecnologi-project-light-w45 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 29, 29, 0.6);
+    width: 4.5rem;
+    height: 2.3rem;
+    border-radius: 40%;
+  }
+
+  .tecnologi-project-light-w10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 29, 29, 0.6);
+    width: 10rem;
+    height: 2.3rem;
+    border-radius: 45%;
+  }
+
+  .tecnologi-project-light-w5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 29, 29, 0.6);
+    width: 5rem;
+    height: 2.3rem;
+    border-radius: 40%;
+  }
+
+  .tecnologi-project-light-w6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 29, 29, 0.6);
+    width: 6rem;
+    height: 2.3rem;
+    border-radius: 40%;
+  }
+
+  .tecnologi-project-dark-w35 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 3.5rem;
+    height: 2.3rem;
+    border-radius: 40%;
+  }
+
+  .tecnologi-project-dark-w65 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 6.5rem;
+    height: 2.3rem;
+    border-radius: 40%;
+  }
 }
