@@ -3,6 +3,7 @@
 Page created with:
 
 * React.js
+* Chackra UI
 * AntDesign
 
 ChatBot:
