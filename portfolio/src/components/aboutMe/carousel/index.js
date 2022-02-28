@@ -4,12 +4,12 @@ import { Carousel } from "antd";
 
 import ImageOne from "./image1.png";
 import ImageTwo from "./image2.png";
-import ImageTree from "./image3.jpg";
+import ImageTree from "./image3.png";
 
 import "./style.scss";
 
 export const CarouselAboutMe = () => {
-  const images = [ImageOne, ImageTwo, ImageTree];
+  const images = [ImageTree, ImageOne, ImageTwo];
 
   return (
     <Box>
@@ -24,7 +24,7 @@ export const CarouselAboutMe = () => {
             <>
               <Image
                 className="image-carrusel"
-                backgroundSize="auto"
+                backgroundSize="contain"
                 src={img}
               />
             </>

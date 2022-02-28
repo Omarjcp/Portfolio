@@ -1,9 +1,7 @@
 import "./App.scss";
-import { Route } from "react-router-dom";
 import "antd/dist/antd.css";
+import { Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
-import ImageBackgrond from "./components/home/walpapaerdark.webp";
 
 import { ChatBotComponent } from "./components/chatBot";
 import { Home } from "./components/home";
@@ -12,8 +10,6 @@ import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
 import { ContactMe } from "./components/contactme";
-
-import imageMe from "./images/meCaricature.png";
 
 function App() {
   return (

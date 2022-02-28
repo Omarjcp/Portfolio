@@ -15,6 +15,7 @@ import {
 import ImageDogPage from "./assets/iconsmall.png";
 import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
 import LogoOj from "../../images/meCaricatureTwo.png";
+import LogoDulceSalao from "./assets/LogoDulceSalao.png";
 
 import "./style.scss";
 
@@ -92,6 +93,42 @@ export const Projects = () => {
               <Link href="https://metacademyapp.web.app/" target="_blank">
                 <IconButton icon={<LinkIcon />} />
               </Link>
+            </Box>
+          </div>
+        </Box>
+        <Box className="card">
+          <Image
+            className="img-dulce"
+            alt="Image dulce y salao"
+            src={LogoDulceSalao}
+          />
+          <div class="info">
+            <Heading>Dulce y Salao</Heading>
+            <Text>
+              Página web en la que se muestran productos de panadería,
+              repostería y pastelería venezolana, para su posterior pedido por
+              medio de whatsapp
+            </Text>
+            <Box className="container-buttons-icons">
+              <Text className="tecnologi-project-light-w35">React</Text>
+              <Text className="tecnologi-project-light-w45">Redux</Text>
+              <Text className="tecnologi-project-light-w65">Chackra Ui</Text>
+              <Text className="tecnologi-project-light-w65">Ant Design</Text>
+              <Text className="tecnologi-project-light-w35">Node</Text>
+              <Text className="tecnologi-project-light-w5">Express</Text>
+              <Text className="tecnologi-project-light-w6">MySQL</Text>
+            </Box>
+
+            <Box className="container-buttons-icons">
+              <Link
+                href="https://github.com/Omarjcp/DulceYSalado-Client"
+                target="_blank"
+              >
+                <IconButton icon={<GithubOutlined />} />
+              </Link>
+              {/* <Link href="#home">
+                <IconButton icon={<LinkIcon />} />
+              </Link> */}
             </Box>
           </div>
         </Box>
