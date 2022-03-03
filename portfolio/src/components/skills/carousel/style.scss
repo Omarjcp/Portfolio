@@ -1,22 +1,22 @@
-.ant-carousel .slick-prev,
-.ant-carousel .slick-prev:hover {
-  left: 10px;
-  z-index: 2;
-  color: white;
-  font-size: 20px;
-  height: auto;
-  width: auto;
-}
+// .ant-carousel .slick-prev,
+// .ant-carousel .slick-prev:hover {
+//   left: 10px;
+//   z-index: 2;
+//   color: white;
+//   font-size: 20px;
+//   height: auto;
+//   width: auto;
+// }
 
-.ant-carousel .slick-next,
-.ant-carousel .slick-next:hover {
-  right: 10px;
-  z-index: 2;
-  color: white;
-  font-size: 20px;
-  height: auto;
-  width: auto;
-}
+// .ant-carousel .slick-next,
+// .ant-carousel .slick-next:hover {
+//   right: 10px;
+//   z-index: 2;
+//   color: white;
+//   font-size: 20px;
+//   height: auto;
+//   width: auto;
+// }
 
 .container-carousels {
   display: flex;
@@ -26,29 +26,38 @@
 
   .container-front {
     height: auto;
-    width: 10rem;
+    width: auto;
     margin: 1rem;
+    .container-images {
+      display: flex !important;
 
-    .image-carrusel {
-      width: 5rem;
-      height: 5rem;
+      .image-carrusel {
+        width: 5rem;
+        height: 5rem;
+      }
+      .image-carrusel-mid {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
   }
 
   .ant-carousel {
+    display: flex;
+    justify-content: center;
     height: 100%;
 
     .slick-slider.slick-initialized {
       padding: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100%;
 
       .slick-list {
         height: 6rem;
-        width: 6rem;
+        width: 20rem;
         .slick-track {
+          padding: 1rem;
           height: 100%;
           img {
             height: 100%;
@@ -61,10 +70,10 @@
 
 @media (max-width: 830px) {
   .container-carousels {
-    flex-direction: column;
+    height: auto;
 
-    .container-front {
-      margin: 0;
-    }
+    // .container-front {
+    //   margin: 0;
+    // }
   }
 }

@@ -29,9 +29,17 @@
 
   .ant-steps-item.ant-steps-item-wait {
     .ant-steps-item-container {
+      .ant-steps-item-icon {
+        background-color: transparent;
+        border-color: white;
+
+        .ant-steps-icon {
+          color: white;
+        }
+      }
       .ant-steps-item-content {
         .ant-steps-item-title {
-          color: grey;
+          color: rgb(255, 255, 255);
         }
 
         .ant-steps-item-title::after {
@@ -45,7 +53,7 @@
     .ant-steps-item-container {
       .ant-steps-item-icon {
         border-color: rgb(110, 255, 74);
-        background-color: grey;
+        background-color: transparent;
         .ant-steps-icon {
           .anticon.anticon-check.ant-steps-finish-icon {
             svg {

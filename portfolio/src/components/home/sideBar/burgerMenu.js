@@ -11,6 +11,7 @@ import "./style.scss";
 import {
   ExperimentOutlined,
   HomeOutlined,
+  MailOutlined,
   ReadOutlined,
   SmileOutlined,
 } from "@ant-design/icons";
@@ -32,17 +33,21 @@ export const BurgerMenu = ({ getPathToRedirect }) => {
           <a href={getPathToRedirect("#home")}>
             <MenuItem icon={<HomeOutlined />}>Inicio</MenuItem>
           </a>
-          <MenuDivider color="white" />
+          <MenuDivider />
           <a href={getPathToRedirect("#aboutme")}>
             <MenuItem icon={<SmileOutlined />}>Acerca de mi</MenuItem>
           </a>
           <MenuDivider />
+          <a href={getPathToRedirect("#skills")}>
+            <MenuItem icon={<ReadOutlined />}>Habilidades</MenuItem>
+          </a>
+          <MenuDivider />
           <a href={getPathToRedirect("#projects")}>
-            <MenuItem icon={<ReadOutlined />}>Proyectos</MenuItem>
+            <MenuItem icon={<ExperimentOutlined />}>Proyectos</MenuItem>
           </a>
           <MenuDivider />
           <a href={getPathToRedirect("#contactme")}>
-            <MenuItem icon={<ExperimentOutlined />}>Contacta me</MenuItem>
+            <MenuItem icon={<MailOutlined />}>Contacta me</MenuItem>
           </a>
         </MenuList>
       </Menu>

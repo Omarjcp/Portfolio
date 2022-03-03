@@ -86,7 +86,7 @@ export const SideBar = () => {
               </a>
             }
           >
-            Skills
+            Habilidades
           </Menu.Item>
           <Menu.Item
             key="/#projects"
@@ -116,7 +116,7 @@ export const SideBar = () => {
               </a>
             }
           >
-            Contacta me
+            Contactame
           </Menu.Item>
         </Menu>
       </div>

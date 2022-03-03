@@ -61,7 +61,9 @@ export const Projects = () => {
                 href="https://github.com/Omarjcp/PI-Dogs-FT_14b"
                 target="_blank"
               >
-                <IconButton icon={<GithubOutlined />} />
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
               </Link>
               <Link href="https://mydogs-b0f97.web.app/" target="_blank">
                 <IconButton icon={<LinkIcon />} />
@@ -88,7 +90,9 @@ export const Projects = () => {
                 href="https://github.com/mamv2137/meta-energy-counter"
                 target="_blank"
               >
-                <IconButton icon={<GithubOutlined />} />
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
               </Link>
               <Link href="https://metacademyapp.web.app/" target="_blank">
                 <IconButton icon={<LinkIcon />} />
@@ -116,7 +120,7 @@ export const Projects = () => {
               <Text className="tecnologi-project-light-w65">Ant Design</Text>
               <Text className="tecnologi-project-light-w35">Node</Text>
               <Text className="tecnologi-project-light-w5">Express</Text>
-              <Text className="tecnologi-project-light-w6">MySQL</Text>
+              <Text className="tecnologi-project-light-w5">MySQL</Text>
             </Box>
 
             <Box className="container-buttons-icons">
@@ -124,7 +128,9 @@ export const Projects = () => {
                 href="https://github.com/Omarjcp/DulceYSalado-Client"
                 target="_blank"
               >
-                <IconButton icon={<GithubOutlined />} />
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
               </Link>
               {/* <Link href="#home">
                 <IconButton icon={<LinkIcon />} />
@@ -150,7 +156,9 @@ export const Projects = () => {
 
             <Box className="container-buttons-icons">
               <Link href="https://github.com/Omarjcp/Portfolio" target="_blank">
-                <IconButton icon={<GithubOutlined />} />
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
               </Link>
               <Link href="#home">
                 <IconButton icon={<LinkIcon />} />
@@ -159,7 +167,7 @@ export const Projects = () => {
           </div>
         </Box>
       </Box>
-      <Box>
+      {/* <Box>
         <Text
           fontWeight="medium"
           marginTop="5rem"
@@ -173,7 +181,7 @@ export const Projects = () => {
             repo <ExternalLinkIcon />
           </Link>
         </Text>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
