@@ -132,7 +132,7 @@ export const Projects = () => {
                   icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
                 />
               </Link>
-              {/* <Link href="#home">
+              {/* <Link href="">
                 <IconButton icon={<LinkIcon />} />
               </Link> */}
             </Box>

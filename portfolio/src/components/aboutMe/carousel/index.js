@@ -13,7 +13,7 @@ export const CarouselAboutMe = () => {
 
   return (
     <Box>
-      <Carousel
+      {/* <Carousel
         arrows={true}
         prevArrow={<LeftOutlined />}
         nextArrow={<RightOutlined />}
@@ -21,16 +21,16 @@ export const CarouselAboutMe = () => {
       >
         {images.map((img) => {
           return (
-            <>
-              <Image
-                className="image-carrusel"
-                backgroundSize="contain"
-                src={img}
-              />
-            </>
+            <> */}
+      <Image
+        className="image-carrusel"
+        backgroundSize="contain"
+        src={ImageOne}
+      />
+      {/* </>
           );
         })}
-      </Carousel>
+      </Carousel> */}
     </Box>
   );
 };
