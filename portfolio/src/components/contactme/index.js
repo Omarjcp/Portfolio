@@ -8,6 +8,8 @@ import { validateEmail } from "./validation";
 
 import "./style.scss";
 import { ArrowLeftOutlined } from "@ant-design/icons";
+import { useEffect } from "react";
+import { IntersectionObserverHook } from "../../intersectionObserver";
 
 const { Step } = Steps;
 
@@ -60,7 +62,7 @@ const validateMessages = {
 };
 /* eslint-enable no-template-curly-in-string */
 
-export const ContactMe = () => {
+export const ContactMe = ({ setCurrent }) => {
   const [msgContact, setMsgContact] = useState({
     name: "",
     email: "",
@@ -72,14 +74,14 @@ export const ContactMe = () => {
 
   const [form] = Form.useForm();
 
-  const [current, setCurrent] = useState(0);
+  const [currentField, setCurrentField] = useState(0);
 
   const next = () => {
-    setCurrent(current + 1);
+    setCurrentField(currentField + 1);
   };
 
   const prev = () => {
-    setCurrent(current - 1);
+    setCurrentField(currentField - 1);
   };
 
   const onFinish = async (values) => {
@@ -103,6 +105,10 @@ export const ContactMe = () => {
     setMsgContact({ ...msgContact, [e.target.name]: e.target.value });
   };
 
+  useEffect(() => {
+    IntersectionObserverHook("/#contactme", "contactme", setCurrent, "0px");
+  }, []);
+
   return (
     <Box
       w="100%"
@@ -113,7 +119,7 @@ export const ContactMe = () => {
       id="contactme"
     >
       <Box w="60%">
-        <Steps current={current}>
+        <Steps currentField={currentField}>
           {steps.map((item) => (
             <Step key={item.title} title={item.title} />
           ))}
@@ -126,14 +132,15 @@ export const ContactMe = () => {
           validateMessages={validateMessages}
           form={form}
         >
-          {steps[current].content}
+          {steps[currentField].content}
           <div className="steps-action">
-            {current > 0 && (
+            {currentField > 0 && (
               <Button style={{ marginRight: ".8rem" }} onClick={() => prev()}>
                 <ArrowLeftOutlined />
               </Button>
             )}
-            {current < steps.length - 1 && validateEmail(msgContact.email) ? (
+            {currentField < steps.length - 1 &&
+            validateEmail(msgContact.email) ? (
               <Button
                 style={{
                   marginRight: ".8rem",

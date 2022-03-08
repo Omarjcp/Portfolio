@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useLocation, useHistory, Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Menu } from "antd";
 import {
   MailOutlined,
@@ -11,12 +11,8 @@ import {
 import "./style.scss";
 import { BurgerMenu } from "./burgerMenu";
 
-export const SideBar = () => {
+export const SideBar = ({ current, setCurrent, locationCurrent }) => {
   const location = useLocation();
-  const history = useHistory();
-  let locationCurrent = "/" + location.hash;
-
-  const [current, setCurrent] = useState(locationCurrent);
 
   const handleClick = (e) => {
     setCurrent(e.key);
@@ -24,12 +20,12 @@ export const SideBar = () => {
 
   useEffect(() => {
     setCurrent(locationCurrent);
-    console.log(locationCurrent);
   }, [locationCurrent]);
 
   const getPathToRedirect = (screen) =>
     location.pathname !== "/" ? `/${screen}` : screen;
 
+  console.log(locationCurrent, current);
   return (
     <>
       <BurgerMenu getPathToRedirect={getPathToRedirect} />
@@ -44,7 +40,7 @@ export const SideBar = () => {
           onClick={handleClick}
         >
           <Menu.Item
-            key="/#home"
+            key={"/#home"}
             icon={
               <a href={getPathToRedirect("#home")}>
                 <HomeOutlined
@@ -59,7 +55,7 @@ export const SideBar = () => {
             Inicio
           </Menu.Item>
           <Menu.Item
-            key="/#aboutme"
+            key={"/#aboutme"}
             icon={
               <a href={getPathToRedirect("#aboutme")}>
                 <SmileOutlined

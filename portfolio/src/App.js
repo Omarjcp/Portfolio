@@ -1,6 +1,7 @@
+import { useState } from "react";
+import { Route, useLocation } from "react-router-dom";
 import "./App.scss";
 import "antd/dist/antd.css";
-import { Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { ChatBotComponent } from "./components/chatBot";
@@ -12,6 +13,14 @@ import { Projects } from "./components/projects";
 import { ContactMe } from "./components/contactme";
 
 function App() {
+  const location = useLocation();
+  let locationCurrent =
+    location.pathname === "/" && location.hash === ""
+      ? "/#home"
+      : "/" + location.hash;
+
+  const [current, setCurrent] = useState(locationCurrent);
+
   return (
     <ChakraProvider>
       <div className="container-app">
@@ -22,8 +31,17 @@ function App() {
         <div className="figure-movil-five"></div>
         <div className="figure-movil-six"></div>
       </div>
-      <Route exact path="/" render={() => <Home />} />
-      <Route path="/" render={() => <SideBar />} />
+      <Route exact path="/" render={() => <Home setCurrent={setCurrent} />} />
+      <Route
+        path="/"
+        render={() => (
+          <SideBar
+            current={current}
+            setCurrent={setCurrent}
+            locationCurrent={locationCurrent}
+          />
+        )}
+      />
       <Route path="/" render={() => <ChatBotComponent />} />
       <Route exact path="/aboutme" render={() => <AboutMe />} />
       <Route exact path="/skills" render={() => <Skills />} />

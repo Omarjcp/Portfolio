@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { GithubOutlined } from "@ant-design/icons/lib/icons";
 import { ExternalLinkIcon, LinkIcon, SearchIcon } from "@chakra-ui/icons";
 import {
@@ -16,10 +17,14 @@ import ImageDogPage from "./assets/iconsmall.png";
 import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
 import LogoOj from "../../images/meCaricatureTwo.png";
 import LogoDulceSalao from "./assets/LogoDulceSalao.png";
+import { IntersectionObserverHook } from "../../intersectionObserver";
 
 import "./style.scss";
 
-export const Projects = () => {
+export const Projects = ({ setCurrent }) => {
+  useEffect(() => {
+    IntersectionObserverHook("/#projects", "projects", setCurrent, "-300px");
+  }, []);
   return (
     <Box id="projects" className="container-main-projects">
       <Box className="container-title-projects">

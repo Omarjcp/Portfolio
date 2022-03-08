@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { CarouselSkills } from "./carousel";
+import { IntersectionObserverHook } from "../../intersectionObserver";
 
 import "./style.scss";
 
-export const Skills = () => {
+export const Skills = ({ setCurrent }) => {
+  useEffect(() => {
+    IntersectionObserverHook("/#skills", "skills", setCurrent, "0px");
+  }, []);
+
   return (
     <Box id="skills" className="container-main-skills">
       <Box className="container-skills">

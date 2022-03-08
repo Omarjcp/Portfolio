@@ -1,15 +1,26 @@
+import { useEffect, useState } from "react";
 import { ArrowDownOutlined } from "@ant-design/icons";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import { CarouselAboutMe } from "./carousel";
+import { IntersectionObserverHook } from "../../intersectionObserver";
 
 import "./style.scss";
 
-export const AboutMe = () => {
+export const AboutMe = ({ setCurrent }) => {
+  useEffect(() => {
+    IntersectionObserverHook(
+      "/#aboutme",
+      "aboutme",
+      setCurrent,
+      "100px 0px -100px 0px"
+    );
+  }, []);
+
   return (
     <Box
       w="100%"
-      h="100vh"
+      // h="100vh"
       display="flex"
       justifyContent="center"
       alignItems="center"
