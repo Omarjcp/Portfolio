@@ -11,6 +11,7 @@ import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
 import { ContactMe } from "./components/contactme";
+// import logoOC from "./images/logoOC.png";
 
 function App() {
   const location = useLocation();

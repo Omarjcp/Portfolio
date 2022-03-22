@@ -11,6 +11,8 @@ import {
 import "./style.scss";
 import { BurgerMenu } from "./burgerMenu";
 
+import logoOC from "../../../images/logoOC.png";
+
 export const SideBar = ({ current, setCurrent, locationCurrent }) => {
   const location = useLocation();
 
@@ -30,6 +32,14 @@ export const SideBar = ({ current, setCurrent, locationCurrent }) => {
     <>
       <BurgerMenu getPathToRedirect={getPathToRedirect} />
       <div className="container-side">
+        <img
+          src={logoOC}
+          style={{
+            position: "absolute",
+            top: "2rem",
+            padding: ".6rem",
+          }}
+        />
         <Menu
           theme="dark"
           defaultSelectedKeys={["/"]}
