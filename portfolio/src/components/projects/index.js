@@ -17,6 +17,7 @@ import ImageDogPage from "./assets/iconsmall.png";
 import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
 import LogoOj from "../../images/meCaricatureTwo.png";
 import LogoDulceSalao from "./assets/LogoDulceSalao.png";
+import LogoQuizCountry from "./assets/iconQuizCountry.png";
 import { IntersectionObserverHook } from "../../intersectionObserver";
 
 import "./style.scss";
@@ -100,6 +101,41 @@ export const Projects = ({ setCurrent }) => {
                 />
               </Link>
               <Link href="https://metacademyapp.web.app/" target="_blank">
+                <IconButton icon={<LinkIcon />} />
+              </Link>
+            </Box>
+          </div>
+        </Box>
+        <Box className="card">
+          <Image
+            className="img-dulce"
+            padding="1rem"
+            alt="Image dulce y salao"
+            src={LogoQuizCountry}
+          />
+          <div class="info">
+            <Heading>Country Quiz</Heading>
+            <Text>
+              Desafío en el cual pondrás a prueba cuantas capitales y banderas
+              del mundo conoces realmente.
+            </Text>
+            <Box className="container-buttons-icons">
+              <Text className="tecnologi-project-light-w35">React</Text>
+              <Text className="tecnologi-project-light-w65">Ant Design</Text>
+              <Text className="tecnologi-project-light-w35">Sass</Text>
+              <Text className="tecnologi-project-light-w5">Axios</Text>
+            </Box>
+
+            <Box className="container-buttons-icons">
+              <Link
+                href="https://github.com/Omarjcp/Country-Quiz"
+                target="_blank"
+              >
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
+              </Link>
+              <Link href="https://country-quiz-93a82.web.app/">
                 <IconButton icon={<LinkIcon />} />
               </Link>
             </Box>
