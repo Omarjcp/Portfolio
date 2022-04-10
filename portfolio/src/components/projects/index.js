@@ -166,7 +166,7 @@ export const Projects = ({ setCurrent }) => {
 
             <Box className="container-buttons-icons">
               <Link
-                href="https://github.com/Omarjcp/DulceYSalado-Client"
+                href="https://github.com/Omarjcp/Dulce-Salao-Client"
                 target="_blank"
               >
                 <IconButton
