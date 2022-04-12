@@ -18,6 +18,7 @@ import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
 import LogoOj from "../../images/meCaricatureTwo.png";
 import LogoDulceSalao from "./assets/LogoDulceSalao.png";
 import LogoQuizCountry from "./assets/iconQuizCountry.png";
+import GaleryImages from "./assets/galeryimages.png";
 import { IntersectionObserverHook } from "../../intersectionObserver";
 
 import "./style.scss";
@@ -135,7 +136,48 @@ export const Projects = ({ setCurrent }) => {
                   icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
                 />
               </Link>
-              <Link href="https://country-quiz-93a82.web.app/">
+              <Link href="https://country-quiz-93a82.web.app/" target="_blank">
+                <IconButton icon={<LinkIcon />} />
+              </Link>
+            </Box>
+          </div>
+        </Box>
+        <Box className="card">
+          <Image
+            className="img-galery"
+            alt="Image dulce y salao"
+            src={GaleryImages}
+          />
+          <div class="info">
+            <Heading>Galery Images</Heading>
+            <Text>
+              Página web en la que subirás imagenes a una galería de fotos
+              general, puedes ver tus imagenes en tu perfil, puedes ver tus
+              datos con los que te registraste y puedes modificar estos datos
+              posteriori.
+            </Text>
+            <Box className="container-buttons-icons">
+              <Text className="tecnologi-project-light-w35">React</Text>
+              <Text className="tecnologi-project-light-w45">Redux</Text>
+              <Text className="tecnologi-project-light-w65">Ant Design</Text>
+              <Text className="tecnologi-project-light-w35">Node</Text>
+              <Text className="tecnologi-project-light-w5">Express</Text>
+              <Text className="tecnologi-project-light-w5">MySQL</Text>
+              <Text className="tecnologi-project-light-w10">
+                Firebase Storage
+              </Text>
+            </Box>
+
+            <Box className="container-buttons-icons">
+              <Link
+                href="https://github.com/Omarjcp/GaleryImages"
+                target="_blank"
+              >
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
+              </Link>
+              <Link href="https://challenge-fs-images.web.app/" target="_blank">
                 <IconButton icon={<LinkIcon />} />
               </Link>
             </Box>
