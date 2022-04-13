@@ -181,9 +181,10 @@
 
 @media (max-width: 501px) {
   .contain-main-home {
-    padding-left: 1rem;
-
+    padding-left: .1rem;
     .contain-text-home {
+      padding-left: 2rem;
+      margin-top: 1rem;
       .title {
         font-size: 2.5rem;
 

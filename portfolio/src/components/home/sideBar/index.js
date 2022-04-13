@@ -27,7 +27,6 @@ export const SideBar = ({ current, setCurrent, locationCurrent }) => {
   const getPathToRedirect = (screen) =>
     location.pathname !== "/" ? `/${screen}` : screen;
 
-  console.log(locationCurrent, current);
   return (
     <>
       <BurgerMenu getPathToRedirect={getPathToRedirect} />

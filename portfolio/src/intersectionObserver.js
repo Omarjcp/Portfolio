@@ -6,7 +6,7 @@ export const IntersectionObserverHook = (
 ) => {
   const onChange = (entries) => {
     if (entries[0].isIntersecting) setterLocation(hashLocation);
-    console.log(entries[0]);
+    // console.log(entries[0]);
   };
 
   const observer = new IntersectionObserver(onChange, {
