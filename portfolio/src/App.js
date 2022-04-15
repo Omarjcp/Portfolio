@@ -11,6 +11,7 @@ import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
 import { Projects } from "./components/projects";
 import { ContactMe } from "./components/contactme";
+import { FooterBar } from "./components/home/footerBar";
 // import logoOC from "./images/logoOC.png";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Route exact path="/skills" render={() => <Skills />} />
       <Route exact path="/projects" render={() => <Projects />} />
       <Route exact path="/contactme" render={() => <ContactMe />} />
+      {/* <Route path="/" render={() => <FooterBar />} /> */}
     </ChakraProvider>
   );
 }

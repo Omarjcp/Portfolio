@@ -12,6 +12,7 @@ import "./style.scss";
 import { BurgerMenu } from "./burgerMenu";
 
 import logoOC from "../../../images/logoOC.png";
+import { FooterBar } from "../footerBar";
 
 export const SideBar = ({ current, setCurrent, locationCurrent }) => {
   const location = useLocation();
@@ -29,7 +30,13 @@ export const SideBar = ({ current, setCurrent, locationCurrent }) => {
 
   return (
     <>
-      <BurgerMenu getPathToRedirect={getPathToRedirect} />
+      {/* <BurgerMenu getPathToRedirect={getPathToRedirect} /> */}
+      <FooterBar
+        getPathToRedirect={getPathToRedirect}
+        current={current}
+        setCurrent={setCurrent}
+        locationCurrent={locationCurrent}
+      />
       <div className="container-side">
         <img
           src={logoOC}
