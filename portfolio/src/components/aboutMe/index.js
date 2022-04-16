@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ArrowDownOutlined } from "@ant-design/icons";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import { CarouselAboutMe } from "./carousel";
@@ -9,23 +8,16 @@ import "./style.scss";
 
 export const AboutMe = ({ setCurrent }) => {
   useEffect(() => {
-    IntersectionObserverHook(
-      "/#aboutme",
-      "aboutme",
-      setCurrent,
-      "100px 0px -100px 0px"
-    );
+    IntersectionObserverHook("/#aboutme", "aboutme", setCurrent, "0px");
   }, []);
 
   return (
     <Box
       w="100%"
-      // h="100vh"
       display="flex"
       justifyContent="center"
       alignItems="center"
       className="aboutme"
-      id="aboutme"
     >
       <Box className="container-aboutme">
         <Heading className="title-aboutme">
@@ -48,6 +40,7 @@ export const AboutMe = ({ setCurrent }) => {
               lineHeight="7"
               fontSize="1rem"
               color="#c5c5c5"
+              id="aboutme"
             >
               Me desempeño como desarrollador web fullstack con ReactJs y
               NodeJs, graduado en{" "}

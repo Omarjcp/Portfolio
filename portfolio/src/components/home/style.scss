@@ -19,22 +19,6 @@
       color: rgb(197, 197, 197);
       font-size: 8vh;
       font-family: "Gochi Hand", cursive;
-      // font-family: "Gloria Hallelujah", cursive;
-      // animation-name: title;
-      // animation-duration: 2s;
-      // animation-timing-function: ease-in-out;
-      // animation-iteration-count: 1;
-      // letter-spacing: 2px;
-      // position: relative;
-
-      // @keyframes title {
-      //   0% {
-      //     right: 100%;
-      //   }
-      //   100% {
-      //     right: 0;
-      //   }
-      // }
 
       .caseUpper {
         display: inline;
@@ -58,21 +42,6 @@
       font-size: 7vh;
       font-family: "Gochi Hand", cursive;
       margin-top: 2rem;
-      // animation-name: titlename;
-      // animation-duration: 3s;
-      // animation-timing-function: ease-in-out;
-      // animation-iteration-count: 1;
-      // letter-spacing: 2px;
-      // position: relative;
-
-      // @keyframes titlename {
-      //   0% {
-      //     right: 100%;
-      //   }
-      //   100% {
-      //     right: 0;
-      //   }
-      // }
     }
 
     .subtitle {
@@ -80,21 +49,6 @@
       font-size: 4.5vh;
       font-family: "Gochi Hand", cursive;
       margin-top: 2rem;
-      // animation-name: subtitle;
-      // animation-duration: 4s;
-      // animation-timing-function: ease-in-out;
-      // animation-iteration-count: 1;
-      // letter-spacing: 2px;
-      // position: relative;
-
-      // @keyframes subtitle {
-      //   0% {
-      //     right: 100%;
-      //   }
-      //   100% {
-      //     right: 0;
-      //   }
-      // }
     }
   }
 
@@ -155,7 +109,6 @@
 @media (max-width: 630px) {
   .contain-main-home {
     height: 100vh;
-    // padding-top: 1rem;
     padding-top: 0;
     justify-content: space-around;
 

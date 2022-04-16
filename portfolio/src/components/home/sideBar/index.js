@@ -8,11 +8,11 @@ import {
   SmileOutlined,
   ReadOutlined,
 } from "@ant-design/icons";
-import "./style.scss";
 import { BurgerMenu } from "./burgerMenu";
+import { FooterBar } from "../footerBar";
 
 import logoOC from "../../../images/logoOC.png";
-import { FooterBar } from "../footerBar";
+import "./style.scss";
 
 export const SideBar = ({ current, setCurrent, locationCurrent }) => {
   const location = useLocation();

@@ -11,10 +11,13 @@ export const Skills = ({ setCurrent }) => {
   }, []);
 
   return (
-    <Box id="skills" className="container-main-skills">
+    <Box className="container-main-skills">
       <Box className="container-skills">
         <Heading className="title-skills">
-          <Text className="case-upper-skills">M</Text>is habilidades...
+          <Text id="skills" className="case-upper-skills">
+            M
+          </Text>
+          is habilidades...
         </Heading>
         <Box className="container-text-skills">
           <Text

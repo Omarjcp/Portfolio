@@ -1,17 +1,7 @@
 import { useEffect } from "react";
 import { GithubOutlined } from "@ant-design/icons/lib/icons";
-import { ExternalLinkIcon, LinkIcon, SearchIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Heading,
-  Text,
-  Image,
-  IconButton,
-  Collapse,
-  Button,
-  useDisclosure,
-  Link,
-} from "@chakra-ui/react";
+import { LinkIcon } from "@chakra-ui/icons";
+import { Box, Heading, Text, Image, IconButton, Link } from "@chakra-ui/react";
 
 import ImageDogPage from "./assets/iconsmall.png";
 import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
@@ -25,10 +15,15 @@ import "./style.scss";
 
 export const Projects = ({ setCurrent }) => {
   useEffect(() => {
-    IntersectionObserverHook("/#projects", "projects", setCurrent, "-300px");
+    IntersectionObserverHook(
+      "/#projects",
+      "projects",
+      setCurrent,
+      "200px 0px 0px 0px"
+    );
   }, []);
   return (
-    <Box id="projects" className="container-main-projects">
+    <Box className="container-main-projects">
       <Box className="container-title-projects">
         <Heading className="title-projects">
           <Text className="case-upper-projects">P</Text>royectos realizados
@@ -39,6 +34,7 @@ export const Projects = ({ setCurrent }) => {
           lineHeight="7"
           fontSize="1rem"
           color="#c5c5c5"
+          id="projects"
         >
           Algunos proyectos que he realizado y de los que he podido ser parte!
         </Text>
@@ -46,7 +42,7 @@ export const Projects = ({ setCurrent }) => {
       <Box className="container-cards-projects">
         <Box className="card-dog">
           <Image alt="image landing page my dog app" src={ImageDogPage} />
-          <div class="info">
+          <div className="info">
             <Heading>My dog app</Heading>
             <Text>
               Página web de búsqueda y creación de razas de perros, consumiendo
@@ -80,7 +76,7 @@ export const Projects = ({ setCurrent }) => {
         </Box>
         <Box className="card">
           <Image alt="image counter metacademy" src={ImageMetaPage} />
-          <div class="info">
+          <div className="info">
             <Heading>Contador Metacademy</Heading>
             <Text>
               Aplicación realizada para academia de Axie Infinity el cual tiene
@@ -114,7 +110,7 @@ export const Projects = ({ setCurrent }) => {
             alt="Image dulce y salao"
             src={LogoQuizCountry}
           />
-          <div class="info">
+          <div className="info">
             <Heading>Country Quiz</Heading>
             <Text>
               Desafío en el cual pondrás a prueba cuantas capitales y banderas
@@ -148,7 +144,7 @@ export const Projects = ({ setCurrent }) => {
             alt="Image dulce y salao"
             src={GaleryImages}
           />
-          <div class="info">
+          <div className="info">
             <Heading>Galery Images</Heading>
             <Text>
               Página web en la que subirás imagenes a una galería de fotos
@@ -189,7 +185,7 @@ export const Projects = ({ setCurrent }) => {
             alt="Image dulce y salao"
             src={LogoDulceSalao}
           />
-          <div class="info">
+          <div className="info">
             <Heading>Dulce y Salao</Heading>
             <Text>
               Página web en la que se muestran productos de panadería,
@@ -223,7 +219,7 @@ export const Projects = ({ setCurrent }) => {
         </Box>
         <Box className="card">
           <Image alt="Caricature of me" src={LogoOj} />
-          <div class="info">
+          <div className="info">
             <Heading>Portafolio</Heading>
             <Text>
               Página web personal en la que muestro un poco sobre mi, las
@@ -250,21 +246,6 @@ export const Projects = ({ setCurrent }) => {
           </div>
         </Box>
       </Box>
-      {/* <Box>
-        <Text
-          fontWeight="medium"
-          marginTop="5rem"
-          lineHeight="7"
-          fontSize="1rem"
-          color="#c5c5c5"
-          padding="3rem"
-        >
-          Si quieres ver mi repositorio con proyectos de práctica, te dejo mi{" "}
-          <Link href="https://github.com/Omarjcp/" isExternal>
-            repo <ExternalLinkIcon />
-          </Link>
-        </Text>
-      </Box> */}
     </Box>
   );
 };

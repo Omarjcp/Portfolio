@@ -40,10 +40,6 @@
 
       @keyframes caseMoveSkills {
         50% {
-          // :hover {
-          //   transform: skew(2deg, 2deg);
-          //   transition: all 0.3s ease;
-          // }
           color: rgb(210, 70, 253);
         }
       }
@@ -74,7 +70,6 @@
   .container-main-skills {
     .container-skills {
       margin-left: 2rem;
-      // width: 80%;
       .title-skills {
         font-size: 1.8rem;
         .case-upper-skills {
@@ -105,7 +100,6 @@
       .container-text-skills {
         p {
           font-size: .9rem;
-          // line-height: 1.5;
         }
       }
     }
@@ -151,23 +145,6 @@
 @media (max-width: 300px) {
   .container-main-skills {
     min-width: 300px;
-    // width: 100%;
-    // .container-skills {
-    //   height: auto;
-    //   padding: 1.9rem;
-    //   .title-skills {
-    //     padding-bottom: .7rem;
-    //     font-size: 1rem;
-    //     .case-upper-skills {
-    //       font-size: 2rem;
-    //     }
-    //   }
-    //   .container-text-skills {
-    //     p {
-    //       font-size: 0.55rem;
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -196,9 +173,7 @@
 
 @media (max-height: 800px) {
   .container-main-skills {
-    // padding: 0;
     .container-skills {
-      // padding: 2rem;
       .container-text-skills {
         padding: 0rem;
       }

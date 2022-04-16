@@ -5,7 +5,7 @@ import {
   MenuItem,
   MenuDivider,
 } from "@chakra-ui/react";
-import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 import "./style.scss";
 import {
