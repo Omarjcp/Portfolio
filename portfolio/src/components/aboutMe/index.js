@@ -31,8 +31,7 @@ export const AboutMe = ({ setCurrent }) => {
               fontSize="1rem"
               color="#c5c5c5"
             >
-              Como ya habrás visto, mi nombre es Omar Castillo, tengo 26 años de
-              edad. Soy el segundo de 3 hermanos.
+              Mi nombre es Omar Castillo, tengo 27 años de edad.
             </Text>
             <Text
               fontWeight="medium"

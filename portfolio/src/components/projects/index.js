@@ -1,8 +1,18 @@
 import { useEffect } from "react";
 import { GithubOutlined } from "@ant-design/icons/lib/icons";
 import { LinkIcon } from "@chakra-ui/icons";
-import { Box, Heading, Text, Image, IconButton, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+  IconButton,
+  Link,
+  Tooltip,
+} from "@chakra-ui/react";
 
+import OmarPunksImage from "./assets/avataaars.png";
+import TodoListImage from "./assets/pen-removebg-preview.png";
 import ImageDogPage from "./assets/iconsmall.png";
 import ImageMetaPage from "./assets/Logo-Meta-Academy.png";
 import LogoOj from "../../images/meCaricatureTwo.png";
@@ -41,9 +51,92 @@ export const Projects = ({ setCurrent }) => {
       </Box>
       <Box className="container-cards-projects">
         <Box className="card-dog">
+          <Image alt="image omar punks app" src={OmarPunksImage} />
+          <div className="info">
+            <Heading>Omar Punks App</Heading>
+            <Text>
+              Galería de NFT creados a partir de datos guardados completamente
+              en la blockchain y mostrados a través de una aplicación desplegada
+              en un sistema de archivos descentralizado.{<br />}
+            </Text>
+            <Box className="container-buttons-icons">
+              <Text className="tecnologi-project-dark-w35">React</Text>
+              <Text className="tecnologi-project-dark-w35">Web3</Text>
+              <Text className="tecnologi-project-dark-w65">Chackra Ui</Text>
+              <Text className="tecnologi-project-dark-w50">Solidity</Text>
+              <Text className="tecnologi-project-dark-w50">Ethers</Text>
+              <Text className="tecnologi-project-dark-w50">Hardhat</Text>
+              <Text className="tecnologi-project-dark-w50">Chai</Text>
+            </Box>
+            <Box className="container-buttons-icons">
+              <Tooltip label="Contract ">
+                <Link
+                  href="https://github.com/Omarjcp/CriptoPunkClient2.0"
+                  target="_blank"
+                >
+                  <IconButton
+                    icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip label="Client">
+                <Link
+                  href="https://github.com/Omarjcp/CryptoPunk2.0"
+                  target="_blank"
+                >
+                  <IconButton
+                    icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                  />
+                </Link>
+              </Tooltip>
+              <Tooltip label="Project">
+                <Link href="https://omar-punks.netlify.app/" target="_blank">
+                  <IconButton icon={<LinkIcon />} />
+                </Link>
+              </Tooltip>
+            </Box>
+          </div>
+        </Box>
+        <Box className="card-dog">
+          <Image alt="image todo list app" src={TodoListImage} />
+          <div className="info">
+            <Heading>Todo List App</Heading>
+            <Text>
+              Simple lista de tareas para hacer, podras agregar, borrar y
+              actualizar tareas y su respectivo estado para saber si la
+              realizaste o no.{<br />}
+            </Text>
+            <Box className="container-buttons-icons">
+              <Text className="tecnologi-project-dark-w35">React</Text>
+              <Text className="tecnologi-project-dark-w65">Typescript</Text>
+              <Text className="tecnologi-project-dark-w50">Zustand</Text>
+              <Text className="tecnologi-project-dark-w50">Mantine</Text>
+              <Text className="tecnologi-project-dark-w50">Gh-pages</Text>
+            </Box>
+            <Box className="container-buttons-icons">
+              <Link
+                href="https://github.com/Omarjcp/Todo-Zustand"
+                target="_blank"
+              >
+                <IconButton
+                  icon={<GithubOutlined style={{ fontSize: "1.18rem" }} />}
+                />
+              </Link>
+              <Tooltip label="Project">
+                <Link
+                  href="https://omarjcp.github.io/Todo-Zustand/"
+                  target="_blank"
+                >
+                  <IconButton icon={<LinkIcon />} />
+                </Link>
+              </Tooltip>
+            </Box>
+          </div>
+        </Box>
+        <Box className="card-dog">
           <Image alt="image landing page my dog app" src={ImageDogPage} />
           <div className="info">
-            <Heading>My dog app</Heading>
+            <Heading>My Dog App</Heading>
             <Text>
               Página web de búsqueda y creación de razas de perros, consumiendo
               API externa y creando una base de datos propia para la

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import { CarouselSkills } from "./carousel";
+import { TabsSkills } from "./tabsSkills";
 import { IntersectionObserverHook } from "../../intersectionObserver";
 
 import "./style.scss";
@@ -27,8 +27,9 @@ export const Skills = ({ setCurrent }) => {
             fontSize="1rem"
             color="#c5c5c5"
           >
-            Ahora que se que quieres saber de mis habilidades, pues te cuento un
-            poco y te muestro ilustraciones sobre ello.
+            Soy una persona disciplinada, constante, proactiva, amable y me
+            gusta trabajar en equipo para poder así escuchar diferentes puntos
+            de vista y aprender de ello.
           </Text>
           <Text
             fontWeight="medium"
@@ -37,10 +38,7 @@ export const Skills = ({ setCurrent }) => {
             fontSize="1rem"
             color="#c5c5c5"
           >
-            Algunas de mis habilidades blandas o soft skills (aunque a mi me
-            gusta llamarlos valores), soy una persona disciplinada, constante,
-            amable y me gusta trabajar en equipo para poder así escuchar
-            diferentes puntos de vista.
+            Soy desarrollador web fullstack con ReactJs y NodeJs.
           </Text>
           <Text
             fontWeight="medium"
@@ -49,22 +47,9 @@ export const Skills = ({ setCurrent }) => {
             fontSize="1rem"
             color="#c5c5c5"
           >
-            Soy desarrollador web fullstack con ReactJs y NodeJs, hace mas de un
-            año he estado en constante aprendizaje como autodidacta en HTML, CSS
-            y Javascript.
+            Te dejo aca abajo las tecnologías que manejo.
           </Text>
-          <Text
-            fontWeight="medium"
-            marginTop=".7rem"
-            lineHeight="7"
-            fontSize="1rem"
-            color="#c5c5c5"
-          >
-            Te dejo aca abajo una pequeña galería de las imagenes en las que se
-            ilustran las tecnologías y herramientas que uso a la hora de
-            desarrollar.
-          </Text>
-          <CarouselSkills />
+          <TabsSkills />
         </Box>
       </Box>
     </Box>
